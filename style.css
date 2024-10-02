@@ -1,0 +1,194 @@
+/* pour le logo  */
+  .custom-size {
+    width: 100px; 
+    height: auto; 
+}
+
+
+.full-height {
+    min-height: 100vh; /* 100% de la hauteur de la vue */
+  }
+
+
+h3{
+  margin-bottom: 100px;
+}
+
+/* ensemble du copyright */
+.custom-padd{
+  margin-bottom: 200px;
+}
+
+
+/* image sur les projet */
+img{
+  width: auto;
+  height: 200px;
+  object-fit: cover;
+}
+
+
+.visited{
+  background-color: rgb(49, 196, 78);
+  
+  
+}
+
+/* zoom sur la taille du button quand la souris passe dessus  */
+.mentionLink:hover {
+  background-color: #ff4500; /* Couleur de fond au survol */
+  transform: scale(1.1); /* Augmente la taille à 110% */
+}
+
+
+
+/* pour custom le menu hamburger */
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='white' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' d='M5 7h20M5 15h20M5 23h20'/%3E%3C/svg%3E");
+}
+
+
+body{
+  background-color: black;
+}
+
+
+/* body {
+  background-image: url('krishna-mantripragada-psMKYwfrJXQ-unsplash.jpg'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+} */
+
+
+
+
+
+
+
+.bg-light footer {
+  padding-top: -2px; /* Ajuste les valeurs selon tes besoins */
+}
+
+
+
+
+
+/* pour le paragraphe du footer */
+footer p {
+  margin-bottom: 5px;
+}
+
+/* espace du liens du footer */
+footer a {
+  margin-top: 5; 
+}
+
+
+
+/* Supprime le contour par défaut surtout pour le liens mention legal qui était relou il est lier avec le java quand meme pour se liens  */
+a {
+  outline: none; 
+}
+
+.droits{
+
+font-weight: 400;
+
+}
+
+/* couleur des logo sociaux  */
+.insta{
+  color: rgb(200, 74, 74);
+}
+
+.git{
+  color: rgb(52, 52, 207);
+}
+
+.link{
+  color: rgb(127, 57, 194);
+}
+
+.env{
+  color: green;
+}
+/* fin couleur logo */
+
+
+
+
+
+
+
+/* mettre le texte en white */
+form{
+  color: aliceblue;
+  padding: 100px;
+}
+
+
+/* pour reston en contact le texte */
+.customh1{
+  padding: 100px;
+}
+
+ /* titre + mes projets */
+h1,h3{
+  color: aliceblue;
+  font-family: 'Tusker Grotesk', sans-serif;
+  font-size: 7rem;
+  letter-spacing: 5px; /* Augmente l'espacement des lettres */
+}
+
+h2{
+  color: aliceblue;
+
+  font-family: 'Tusker Grotesk', sans-serif;
+  font-size: 3rem;
+  letter-spacing: 5px; /* Augmente l'espacement des lettres */
+
+}
+
+/* texte pour about me */
+span{
+  color: white;
+}
+
+/* image de profile about  */
+.custom-img{
+  width: 200px; /* largeur*/
+  height: 200px; /* hauteur */
+  border-radius: 50%; /* Crée un cercle */
+  object-fit: cover; /* Garde l'image bien ajustée dans le cercle */
+  margin: 50px;
+}
+
+/* pour le texte about me  */
+.customspan{
+  
+  margin: 150px;
+
+  margin-bottom: 200px;
+}
+
+/* pour le degrader juste sur la page conctact.html */
+.contact-background {
+  background: linear-gradient(to bottom, #000000, #434343); /* dégradé noir */
+}
+
+
+ul {
+font-size: 20px;
+
+}
+
+
+
+
+@font-face {
+  font-family: 'Tusker Grotesk';
+  src: url('fonts/TuskerGrotesk-3800Super.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
