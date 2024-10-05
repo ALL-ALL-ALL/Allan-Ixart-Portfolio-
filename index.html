@@ -48,17 +48,6 @@
  
 
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-        $('#hideButton').click(function(event) {
-            event.stopPropagation(); // Empêche le clic de se propager au document
-            $('#myImage').toggle(); // Cacher ou montrer l'image
-        });
-
-        $(document).click(function() {
-            $('#myImage').show(); // Réapparaît l'image
-        });
-    </script>
 
 
     <!-- titre accueil -->
@@ -82,7 +71,18 @@
     
     
 
+<!-- avec jquery cacher le logo  -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $('#hideButton').click(function(event) {
+            event.stopPropagation(); // Empêche le clic de se propager au document
+            $('#myImage').toggle(); // Cacher ou montrer l'image
+        });
 
+        $(document).click(function() {
+            $('#myImage').show(); // Réapparaît l'image
+        });
+    </script>
 
 
 
