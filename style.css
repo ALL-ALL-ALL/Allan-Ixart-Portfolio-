@@ -1,108 +1,277 @@
 
+/********************************* DEBUT SECTION BODY  *********************************/
+
 body {
   background-image: url('hao-wang-pVq6YhmDPtk-unsplash.jpg'); 
+  background-attachment: fixed; /* L'image de fond reste fixe */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh; /* Assure que le body prend toute la hauteur de la fenêtre */
   margin: 0; /* Enlève les marges par défaut */
+
 }
+/********************************* FIN SECTION BODY  *********************************/
+/********************************* DEBUT CUSTOM LOGO  *********************************/
 
 
 
-/* pour custom le menu hamburger */
+          /* pour custom le menu hamburger */
 .custom-toggler .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='white' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' d='M5 7h20M5 15h20M5 23h20'/%3E%3C/svg%3E");
 
 }
+/********************************* FIN CUSTOM LOGO  *********************************/
+/********************************* DEBUT CUSTOM ICONE   *********************************/
+
 
 .iconesvg{
   color: #ffffff;
   
 }
 
+/********************************* FIN CUSTOM ICONE   *********************************/
+/********************************* DEBUT SECTION LOGO SOCIAUX  *********************************/
 
 
-
-/* couleur des logo sociaux  */
-.insta{
-  color: rgb(200, 74, 74);
-}
+        /*  logo sociaux  */
 
 .git{
   color: rgb(52, 52, 207);
+  font-size: 30px; /* grosseur*/
+  margin-right: 15px; /* Ajustez la valeur selon l'espace souhaité */
 }
 
 .link{
   color: rgb(127, 57, 194);
+  font-size: 30px;   /* grosseur*/
+  margin-right: 15px; /* Ajustez la valeur selon l'espace souhaité */
+
 }
 
 .env{
   color: green;
+  font-size: 30px; /* grosseur*/
+  margin-right: 15px; /* Ajustez la valeur selon l'espace souhaité */
+
+
 }
-/* fin couleur logo */
 
 
-/* pour mettre en place une font-familly tusker */
+
+
+
+/********************************* FIN SECTION LOGO SOCIAUX  *********************************/
+/********************************* DEBUT POUR METTRE EN PLACE LES FONT PERSO  *********************************/
+
+
+      /* pour mettre en place une font-familly tusker */
 @font-face {
   font-family: 'Tusker Grotesk';
   src: url('fonts/TuskerGrotesk-3800Super.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
+/********************************* FINT POUR METTRE EN PLACE LES FONT PERSO  *********************************/
+/********************************* DEBUT TEXTE PAGE HELLO   *********************************/
 
-
-/* c'est le texte allan */
+        /* c'est le texte allan ixart */
 
 .titre-accueil1{
   margin-left: 55px;
-  margin-top: 170px;
-  color: #ecd4d4;
+  margin-top: 90px;
+  color: #ffffff;
   font-family: 'Tusker Grotesk' ;
   font-size: 50px;  
   letter-spacing: 13px;
 }
 
-/* c'est le texte developeur web */
+        /* c'est le texte developeur web */
 .titre-accueil2{
-  color: #dbbebe;
+  color: #ffffff;
   font-size: 45px;  
   font-family: 'Tusker Grotesk' ;
   letter-spacing: 12px;
 
 
 }
+/********************************* FIN TEXTE PAGE HELLO   *********************************/
+/********************************* SECTION MENUE DEROULANT  *********************************/
 
-
-/* menu deroulant le fond */
+        /* menu deroulant le fond */
 .dropdown-menu {
   background-color: rgba(11, 2, 2, 0.1); /* Fond noir avec transparence c'est le 0.1 */
   border: none;
 }
 
-/* Couleur du texte en blanc du menu deroulant */
+        /* Couleur du texte en blanc du menu deroulant */
 .dropdown-item {
   color: white; 
 }
 
-
+      /* menu deroulant */
 .dropdown-item:hover {
   background-color: #33393f; /* Couleur de fond lors du survol des categories */
   color: white; /* Couleur du texte lors du survol */
 }
 
-/* Transition pour l'effet de zoom */
+        /* Transition pour l'effet de zoom */
 nav ul li a {
-  transition: transform 0.2s ease; 
+  transition: transform 0.2s ease;
 }
 
-/* effet loupe */
+        /* effet loupe */
 
 nav ul li a:hover {
   transform: scale(0.9); /* Réduction à 50 % */
 }
 
+/********************************* FIN SECTION MENUE DEROULANT  *********************************/
+/********************************* DEBUT SECTION ABOUT ME   *********************************/
 
 
+.section{
+  color: #ffffff;  /* couleur du texte de la section about me */
+  padding: 100px; 
+}
+
+        /* le  titre about me */ 
+.title{
+  padding-bottom: 120px;   /* sur le titre par rapport au texte juste en bas pour lécarter */ 
+  font-family: 'Tusker Grotesk' ;
+  font-size: 50px;
+  letter-spacing: 5px;
+}
+        /* le titre vous avez une question sur contact */
+span{
+  font-family: 'Tusker Grotesk' ;
+  padding-left: 390px;
+  letter-spacing: 5px;
+  font-size: 50px;
+
+}
+
+/********************************* FIN SECTION ABOUT ME   *********************************/
+/********************************* DEBUT SECTION TEXTE PAGE PROJETS   *********************************/
+
+      /* sur projet titre */
+.title-projet{
+  padding-bottom: 120px; 
+  font-family: 'Tusker Grotesk' ;
+  font-size: 50px;
+  letter-spacing: 5px;
+}
+
+      /* et sur le texte juste en bas du titre avec le liens  */
+.lead{
+  padding-bottom: 100px; 
+
+}
+
+/********************************* FIN SECTION TETE PAGE PROJETS   *********************************/
+/********************************* DEBUT SECTION DES CARD PAGE PROJETS   *********************************/
+
+        /* boutton des card x2 */
+.btn-primary {
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #004691;
+}
+
+        /* leger zomm sur les image des card x2 */
+.card-img-top {
+  object-fit: fill;
+  height: 25rem;
+  width: 24rem;
+  transition: transform 0.3s;
+  
+
+
+}
+
+.card-img-top:hover {
+  transform: scale(1.05);
+
+}
+
+        /* titre des card */
+.card-title {
+  color: rgb(239, 48, 0);
+}
+
+.card-img-top {
+  border-radius: 5px;
+
+}
+
+      /* debut entre le titre et le texte de la card */
+#card-text1{
+  padding-top: 30px;
+}
+
+#card-text2{
+  padding-top: 30px;
+}
+
+#card-text3{
+  padding-top: 30px;
+}
+#card-text4{
+  padding-top: 30px;
+}
+
+#card-text5{
+  padding-top: 30px;
+}
+#card-text6{
+  padding-top: 30px;
+}
+      /* fin entre le titre et le texte de la card */
+
+
+/********************************* FIN SECTION DES CARD PAGE PROJETS   *********************************/
+/********************************* DEBUT SECTION FORMULAIRE   *********************************/
+
+      /* texte du formulaire en blanc */
+#contact-form{
+  color: #ffffff;
+
+}
+
+
+
+
+
+      /* pour la largeur du champs blanc  */
+.form-control{
+  width: 330px;
+}
+
+
+/********************************* FIN SECTION FORMULAIRE   *********************************/
+/********************************* DEBUT SECTION FOOTTER   *********************************/
+
+
+      /* texte du copyright */
+.droits{
+  color: #ffffff;
+}
+
+.footer{
+  padding-top: 110px;
+}
+
+/* padding sur le texte allan ixart tout droit reserver :') */
+h6{
+  padding-top: 20px;
+}
+
+
+
+
+
+/********************************* FIN SECTION FOOTTER   *********************************/
 
 

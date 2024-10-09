@@ -23,6 +23,9 @@ mentionLinks.forEach(link => {
 
 
 
+// /::::/::::::::::::::::::::::debut emailjs:::::::::::::::::::::::::::::::::::::::::
+
+
 // Initialisation de EmailJS avec ton user ID
 (function(){
     emailjs.init("kyMmDuX5KQfipVJz");
@@ -64,9 +67,15 @@ $("#contact-form").submit(function(event) {
 });
 
 
+// /::::/:::::::::::::::::::::FIN DU EMAILJS::::::::::::::::::::::::::::::::::::::::::
 
 
 
+
+
+
+
+// /::::/:::::::::::::::::::::DEBUT DU MENU DEROULANT ::::::::::::::::::::::::::::::::::::::::::
 
 
 // global. currently active menu item 
@@ -124,3 +133,7 @@ jQuery(document).ready(function($) {
 });
 
 
+// /::::/::::::::::::::::::::::FIN DU MENU DEROULANT:::::::::::::::::::::::::::::::::::::::::
+
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
