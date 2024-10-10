@@ -53,9 +53,17 @@ body {
   color: green;
   font-size: 30px; /* grosseur*/
   margin-right: 15px; /* Ajustez la valeur selon l'espace souhaité */
-
-
 }
+
+
+/* pour ajuster les logo sociaux car il etait trop en bas de la page youyouyoyuou*/
+.footer ul {
+  margin-top: -10px; 
+padding-bottom: 10px;
+}
+
+
+
 
 
 
@@ -269,9 +277,37 @@ h6{
 }
 
 
-
-
-
 /********************************* FIN SECTION FOOTTER   *********************************/
+/********************************* DEBUT SECTION COMPETENCE LOGO   *********************************/
+
+/* titre texte (competence) */
+.title2{
+  font-family: 'Tusker Grotesk' ;
+  letter-spacing:15px;
+  font-size: 60px;
+
+}
+
+.icon {
+
+  font-size: 200px; /* Ajustez la taille des icônes Font Awesome ici */
+  margin: 100px;
+}
+
+.icons1{
+  margin-left: 110px;
+  padding-top: 110px;
+
+
+
+}
+
+.icons2{
+  margin-left: 100px;
+}
+
+
+/********************************* FIN SECTION COMPETENCE LOGO   *********************************/
+
 
 
