@@ -9,8 +9,11 @@ body {
   background-repeat: no-repeat;
   height: 100vh; /* Assure que le body prend toute la hauteur de la fenêtre */
   margin: 0; /* Enlève les marges par défaut */
+  
 
 }
+
+
 /********************************* FIN SECTION BODY  *********************************/
 /********************************* DEBUT CUSTOM LOGO  *********************************/
 
@@ -81,30 +84,20 @@ padding-bottom: 10px;
   font-style: normal;
 }
 /********************************* FINT POUR METTRE EN PLACE LES FONT PERSO  *********************************/
-/********************************* DEBUT TEXTE PAGE HELLO   *********************************/
+/********************************* DEBUT TEXTE PAGE HELLO   **************************************************/
 
-        /* c'est le texte allan ixart */
+        /* section 1 ()*/
 
-.titre-accueil1{
-  margin-left: 55px;
-  margin-top: 90px;
+#hello{
+  margin-top: 60px;
   color: #ffffff;
   font-family: 'Tusker Grotesk' ;
   font-size: 50px;  
-  letter-spacing: 13px;
+  letter-spacing: 15px;
 }
 
-        /* c'est le texte developeur web */
-.titre-accueil2{
-  color: #ffffff;
-  font-size: 45px;  
-  font-family: 'Tusker Grotesk' ;
-  letter-spacing: 12px;
-
-
-}
-/********************************* FIN TEXTE PAGE HELLO   *********************************/
-/********************************* SECTION MENUE DEROULANT  *********************************/
+/********************************* FIN TEXTE PAGE HELLO   ****************************************************/
+/********************************* SECTION MENUE DEROULANT  **************************************************/
 
         /* menu deroulant le fond */
 .dropdown-menu {
@@ -135,7 +128,7 @@ nav ul li a:hover {
 }
 
 /********************************* FIN SECTION MENUE DEROULANT  *********************************/
-/********************************* DEBUT SECTION ABOUT ME   *********************************/
+/********************************* DEBUT SECTION ABOUT ME   *************************************/
 
 
 .section{
@@ -150,17 +143,10 @@ nav ul li a:hover {
   font-size: 50px;
   letter-spacing: 5px;
 }
-        /* le titre vous avez une question sur contact */
-span{
-  font-family: 'Tusker Grotesk' ;
-  padding-left: 390px;
-  letter-spacing: 5px;
-  font-size: 50px;
 
-}
 
-/********************************* FIN SECTION ABOUT ME   *********************************/
-/********************************* DEBUT SECTION TEXTE PAGE PROJETS   *********************************/
+/********************************* FIN SECTION ABOUT ME   ***************************************/
+/********************************* DEBUT SECTION TEXTE PAGE PROJETS   ***************************/
 
       /* sur projet titre */
 .title-projet{
@@ -176,8 +162,8 @@ span{
 
 }
 
-/********************************* FIN SECTION TETE PAGE PROJETS   *********************************/
-/********************************* DEBUT SECTION DES CARD PAGE PROJETS   *********************************/
+/********************************* FIN SECTION TETE PAGE PROJETS   *******************************/
+/********************************* DEBUT SECTION DES CARD PAGE PROJETS   *************************/
 
         /* boutton des card x2 */
 .btn-primary {
@@ -239,8 +225,8 @@ span{
       /* fin entre le titre et le texte de la card */
 
 
-/********************************* FIN SECTION DES CARD PAGE PROJETS   *********************************/
-/********************************* DEBUT SECTION FORMULAIRE   *********************************/
+/********************************* FIN SECTION DES CARD PAGE PROJETS   ****************************/
+/********************************* DEBUT SECTION FORMULAIRE   *************************************/
 
       /* texte du formulaire en blanc */
 #contact-form{
@@ -258,8 +244,8 @@ span{
 }
 
 
-/********************************* FIN SECTION FORMULAIRE   *********************************/
-/********************************* DEBUT SECTION FOOTTER   *********************************/
+/********************************* FIN SECTION FORMULAIRE   ***************************************/
+/********************************* DEBUT SECTION FOOTTER   ****************************************/
 
 
       /* texte du copyright */
@@ -267,24 +253,56 @@ span{
   color: #ffffff;
 }
 
-.footer{
-  padding-top: 110px;
+/* vous avez une question */
+.title14{
+  font-family: 'Tusker Grotesk' ;
+  letter-spacing: 5px;
+  font-size: 50px;
+  padding-bottom: 50px;
 }
+
+
 
 /* padding sur le texte allan ixart tout droit reserver :') */
 h6{
   padding-top: 20px;
 }
 
+.bas {
+  position: relative; /* Permet le déplacement */
+  top: 230px;
 
-/********************************* FIN SECTION FOOTTER   *********************************/
+
+
+}
+
+/* texte pour la modal ses les  condition legal */
+.modal-body{
+  color: black;
+}
+
+/* liens ou ya ecris mention legal */
+.mentionLink{
+  font: bolder;
+  letter-spacing: 2px;
+  font-size: 17px;
+
+
+}
+
+
+
+/********************************* FIN SECTION FOOTTER   *******************************************/
 /********************************* DEBUT SECTION COMPETENCE LOGO   *********************************/
 
 /* titre texte (competence) */
 .title2{
   font-family: 'Tusker Grotesk' ;
   letter-spacing:15px;
-  font-size: 60px;
+  font-size: 40px;
+  padding-top: 150px;
+  text-decoration: underline;
+
 
 }
 
@@ -308,6 +326,26 @@ h6{
 
 
 /********************************* FIN SECTION COMPETENCE LOGO   *********************************/
+/********************************* DEBUT SECTION PHOTO ABOUT ME   *********************************/
 
 
 
+.photo-allan{
+  
+padding-bottom: 200px;
+
+border-radius: 50%;
+object-fit: cover; /* Pour bien ajuster l'image dans le cercle */
+
+}
+
+
+/********************************* FIN SECTION PHOTO ABOUT ME   *************************************/
+/********************************* DEBUT SECTION TEXTE QUI SUIS-JE   *********************************/
+
+
+h5{
+padding-bottom: 10px;
+}
+
+/********************************* FIN SECTION TEXTE QUI SUIS-JE   *********************************/

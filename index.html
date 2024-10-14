@@ -4,19 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Inclus le CSS de Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">   
     <!-- pour avoir les icon bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <!-- Bibliothèque FontAwesome -->
     <script src="https://kit.fontawesome.com/0e018748fd.js" crossorigin="anonymous"></script>
     <!--POOPER.JS POUR LES TOOLTIPS  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
+    <!--J-QUERY  -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+
     <!-- pour le FAVICON qui à été bien relou et qui fonctionne pas sur safari()du moins on verra bien  -->
     <link rel="icon" type="icon" href="favicon.ico">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
+
     <!-- Ton fichier CSS personnalisé -->
     <link rel="stylesheet" href="style.css">
     <title>ALLAN IXART</title>
+
 </head>
 <body>
     
@@ -29,37 +36,309 @@
                     </svg>
                 </button>
                 <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="index.html">Hello</a></li>
-                    <li><a class="dropdown-item" href="about.html">About me</a></li>
-                    <li><a class="dropdown-item" href="projet.html">Projet</a></li>
-                    <li><a class="dropdown-item" href="contact.html">Contact</a></li>
+                    <li><a class="dropdown-item" href="#hello">Hello</a></li>
+                    <li><a class="dropdown-item" href="#about">About me</a></li>
+                    <li><a class="dropdown-item" href="#projet">Projet</a></li>
+                    <li><a class="dropdown-item" href="#contact">Contact</a></li>
+
                 </ul>
             </div>
         </div>
     </nav>
 
 
- 
+         <!--*************************** DEBUT Section Hello ********************************** -->
+   <section id="hello" class="section" style="display:block;"> <!-- La première section visible -->
 
+    <div class="container">
+        <h1>Allan IXART</h1>
+        <h1>Développeur WEB</h1>
+    </div>
 
-
-
-    <!-- titre accueil -->
-    <section id="hello" class="section">
-        <div class="container">
-            <h1 class="titre-accueil1">Allan IXART</h1>
-            <h1 class="titre-accueil2">Développeur WEB</h1>
-        </div>
     </section>
+         <!--******************************** fin Section Hello ****************************** -->
 
 
+
+        <!--*************************** DEBUT Section About me (la vrai) ********************* -->
+<section id="about" class="section" style="display:none;"> <!-- Masquée par défaut -->
+    <div class="container">
+
+        <section class="photo-allan d-flex justify-content-center ">
+            <div id="photo">
+                <div>
+                    <img src="SCR-20241013-dchi.webp" alt="Photo de Allan" width="300" height="380">
+                </div>
+            </div>
     
+        </section>
 
 
 
+        <div class="row justify-content-center ">
+            <div class="col-4 text-center">    
+                <h5><strong>Qui suis-je !!<br></strong></h5>
+                
+                <p>Je m'appelle Allan Ixart, Aprés deux ans en tant que animateur en centre de loisirs j'ai eu envie d'une reconversion profesionelle qui me plaiser bien plus,J'ai commencé à m'intéresser au développement web et me suis tournée vers les formations comme celle de openclassrooms et les tutos en ligne en premier lieu, super motivée à continuer dans cette voie, j'ai participé au programmes de "adrar" puis chez Simplon AFP en novembre 2023 puis l'extended juillet 2024 ce qui ma permi aussi de voir chez eux le developpement d'aplication IOS. Super motivée à continuer dans cette voie, je continue à me former en tant qu'autodidacte dans ses deux domaines, mais aussi dans le design est  en parallèle, je cherche une alternance pour début septembre 2024.</p>    
+            </div>
+
+        </div>
+
+
+
+
+        <h2 class=" title2 text-center">Compétences</h2>
+
+        <div class="row ">
+            <div class="col-4">
+                <i class="fa-brands fa-js icon"></i>
+            </div>
+            <div class="col-4"> 
+                <i class="fa-brands fa-sass icon"></i>
+            </div>
+            <div class="col-4">
+                <i class="fa-brands fa-wordpress icon"></i>
+            </div>
+        </div>
+
+
+
+        <div class="row ">
+            <div class="col-4">
+                <i class="fa-brands fa-figma icon"></i>
+            </div>
+            <div class="col-4"> 
+                <i class="fa-brands fa-github icon"></i>
+            </div>
+            <div class="col-4">
+                <i class="fa-brands fa-html5 icon"></i>
+            </div>
+        </div>
+
+
+        <div class="row ">
+            <div class="col-4">
+                <i class="fa-brands fa-css3-alt icon"></i>
+            </div>
+            <div class="col-4"> 
+                <i class="fa-brands fa-swift icon"></i>
+            </div>
+            <div class="col-4">
+                <i class="fa-solid fa-database icon"></i>
+            </div>
+        </div>
+
+
+        
+        
+    </div>
+</section>
+        <!--*************************** FIN Section About me **********************************-->
+
+        <!--*************************** DEBUT Section Projet ********************************* -->
+<section id="projet" class="section" style="display:none;">
+    <div class="container">
+        <h2 class=" title-projet text-center">Mes projets</h2>
+            <p class="lead text-center">
+                Pour en savoir  un peu plus   <br>
+                 <a href="https://github.com/ALL-ALL-ALL">github</a>, thank you guys!
+            </p>
+
+           
+            
+
+
+            <div class="row justify-content-center ">
+                <div class="col-4 text-center d-flex ">
+                    <div class="card rounded shadow-lg">
+                        <img src="SCR-20240926-ozct.webp" class="card-img-top" alt="photo de xcode d'un proto d'applications">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">AINAO</h5>
+                            <p class="card-text" id="card-text1">Ce projet est un prototype d'application iOS développée en Swift SwiftUI en collaboration avec 3 pers ce projet a pour but d'aider les personnes à mobilité réduite de trouver des trajets qui leur convient le plus fonctionne de leur handicap..</p>
+                            <a href="https://github.com/ALL-ALL-ALL/AINAO_Nav" class="btn btn-primary mt-auto">En savoir plus</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="col-4 text-center d-flex ">
+                    <div class="card rounded shadow-lg">
+                        <img src="SCR-20240926-ozrx.webp" class="card-img-top" alt="photo d'un proto d'application mobile sur xcode">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">ADYA</h5>
+                            <p class="card-text" id="card-text2">Ce projet est un prototype d'application iOS développée en Swift SwiftUI en collaboration avec 3 pers, il permet de faciliter les visites avec un guide personnalisé...</p>
+                            <a href="https://github.com/ALL-ALL-ALL/ProjectMuseumApp" class="btn btn-primary mt-auto">En savoir plus</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="row justify-content-center">
+                <div class="col-4 text-center d-flex gy-5">
+                    <div class="card rounded shadow-lg d-flex flex-column">
+                        <img src="SCR-20240926-ojht.webp" class="card-img-top" alt="image qui illustre le rpg">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Mini jeu</h5>
+                            <p class="card-text" id="card-text3">Le but de ce projet, est de développer un jeu de rôle simple en utilisant HTML, CSS et JavaScript. J'ai appris à créer une interface utilisateur interactive en manipulant le DOM et en intégrant des éléments de style pour améliorer l'expérience utilisateur, etc.</p>
+                            <a href="https://github.com/ALL-ALL-ALL/AINAO_Nav" id="button3" class="btn btn-primary mentionLink mt-auto">En savoir plus</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="col-4 text-center d-flex gy-5">
+                    <div class="card rounded shadow-lg d-flex flex-column">
+                        <img src="SCR-20240926-paxn.webp" class="card-img-top" alt="photo d'un proto sur xcode">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Catalogue Animalier Personnalisé</h5>
+                            <p class="card-text" id="card-text4">Ce projet est un prototype d'application iOS développée avec SwiftUI, permettant de pouvoir ajouter ou supprimer mon catalogue Animalier, ce projet m'a permis d'utiliser des Property Wrapper , condition if elese , for each, etc.</p>
+                            <a href="https://github.com/ALL-ALL-ALL/ProjectMuseumApp" id="button4" class="btn btn-primary mentionLink mt-auto">En savoir plus</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="row justify-content-center ">
+                <div class="col-4 text-center d-flex gy-5">
+                    <div class="card rounded shadow-lg d-flex flex-column ">
+                        <img src="SCR-20240926-oozk.webp" class="card-img-top" alt="image qui illustre un pokedex">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Mon Pokedex</h5>
+                            <p class="card-text" id="card-text5">Dans ce projet, le but était d'afficher une liste de Pokémon en utilisant HTML, CSS et JavaScript. À travers ce projet, j'ai appris à intégrer des données d'une API, manipuler le DOM, utiliser CSS Grid et Flexbox.</p>
+                            <a href="https://github.com/ALL-ALL-ALL/TP-POKEDEX" id="button5" class="btn btn-primary mentionLink mt-auto">En savoir plus</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="col-4 text-center d-flex gy-5">
+                    <div class="card rounded shadow-lg d-flex flex-column">
+                        <img src="SCR-20240926-owzw.webp" class="card-img-top" alt="photo d'un projet de xcode">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Mon Répertoire Musical Personnel</h5>
+                            <p class="card-text" id="card-text6">Ce projet est un prototype d'application iOS développée avec SwiftUI, permettant de gérer une liste d'artistes et de leurs chansons préférées. Voici les principales fonctionnalités : ajout et suppression d'artistes, navigation dynamique, persistance des données avec SwiftData.</p>
+                            <a href="https://github.com/ALL-ALL-ALL/MyFavoriteSinger" id="button6" class="btn btn-primary mentionLink mt-auto">En savoir plus</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+
+    </div>
+</section>
+        <!--**************************** FIN Section Projet ***********************************-->
+
+        <!-- *************************** DEBUT Section Contact ********************************-->
+
+        <section id="contact" class="section" style="display:none;">
+            <div>
+                <h2 class=" title14 text-center">Vous avez une Question?</h2>
+        
+                <div class="d-flex justify-content-center">
+                    <div>
+                        <form id="contact-form">
+                            
+                            <div class="form1 mt-3"> 
+                                <label for="nom" class="form-label">Nom</label>
+                                <input type="text" class="form-control" name="from_name" required>
+                            </div>
+                            
+                            <div class="form2 mt-3">
+                                <label for="email" class="form-label">Email address</label>
+                                 <input type="email" class="form-control" name="email_id" required>
+                            </div>
+        
+                            <div class="form3 mt-3">
+                                <label for="message" class="form-label">Votre message</label>
+                                <textarea class="form-control" name="message" rows="3" placeholder="Écrivez votre message ici..." required></textarea>
+                            </div>
+        
+                            <div class="form4 mt-3">
+                                <button type="submit" class="btn btn-primary w-100">Envoyer</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        
+
+
+            <!-- bannier du footer -->
+             <div class="bas">
+                <div class="container ">
+                    <div class="footer text-center text-white py-4">
+                        <!-- Contenu du footer -->
+
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal" class="mentionLink" >Mentions Légales</a>
+
+                        <p class="droits">Copyright &copy; 2024 ALLAN IXART. Tous droits réservés.</p>
+
+
+
+                        
+                       <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>
+                                        <strong>Éditeur du site</strong><br>
+                                        Ce site est édité par Allan Ixart.<br>
+                                        Email : ixartallan5@gmail.com
+                                    </p>
+                                    
+                                    <p>
+                                        <strong>Hébergeur</strong><br>
+                                        Le site est hébergé par GitHub Pages.<br>
+                                        Adresse : https://pages.github.com/
+                                    </p>
+                                    
+                                    <p>
+                                        <strong>Propriété intellectuelle</strong><br>
+                                        Les images présentes sur ce site proviennent de la plateforme Unsplash et sont utilisées conformément à leurs conditions d'utilisation. Elles restent la propriété de leurs auteurs respectifs.
+                                    </p>
+                                    
+                                    <p>
+                                        <strong>Responsabilité</strong><br>
+                                        Allan Ixart s'efforce de fournir des informations à jour et exactes sur ce site, mais ne peut être tenu responsable des erreurs ou omissions, ni des dommages résultant de l'utilisation de ces informations.
+                                    </p>
+                                    
+                                    <p>
+                                        <strong>Données personnelles</strong><br>
+                                        Les données recueillies via le formulaire de contact sont utilisées uniquement pour répondre à vos messages. Vous pouvez demander la modification ou la suppression de ces données à tout moment en nous contactant à l’adresse suivante  ixartallan5@gmail.com.
+                                    </p>
     
+                                </div>
+                                <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                            </div>
+                        </div>                
+                        
+                        <!-- Liens sociaux -->
+                        <ul class="list-inline">
+                            <a class="git" href="https://github.com/ALL-ALL-ALL" ><i class="fa-brands fa-github"></i></a>
+                            <a class="env" href="mailto: ixartallan5@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                            <a class="link" href="https://www.linkedin.com/in/allan-ixart/"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </ul>
+                    </div>
+    
+                 </div>
+
+             </div>
    
-    
+        </section>
+        
+
+
+
+        <!-- *************************** FIN Section Contact **********************************-->
+
+
 
                 
     
@@ -81,16 +360,58 @@
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <!-- pour lier le fichier script.js -->
 
+
+
+<!-- pour la transition des section smouth  -->
+<script>
+    $(document).ready(function() {
+        $("a", '.dropdown-menu').click(function() {
+            var target = $(this).attr('href');
+            
+            $('.section:visible').fadeOut(1300, function() {
+                $(target).fadeIn(1300);
+            });
+            
+            return false; // Empêche le lien de changer de page
+        });
+    });
+    </script>
+
+
+<!-- pour emailjs -->
+
+<script>
+    emailjs.init("PKuTqNHDiPJMrO5bL");  // Remplacez par votre clé publique
     
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    $("#contact-form").submit(function(event) {
+        event.preventDefault(); // Empêche le formulaire de se soumettre normalement
+        
+        emailjs.sendForm("service_eumieoh", "template_oib4hq7", this)
+        .then(function() {
+            alert("Email envoyé avec succès !");
+        }, function(error) {
+            alert("Échec de l'envoi : " + JSON.stringify(error));
+        });
+    });
+    </script>
+      
+      
 
 
-    <script src="script.js"></script>
 
+      <!-- jquery menu deroulant-->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+      
+      <!-- pour jsemail -->
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+      
+      <!-- pour lier le fichier script.js -->
+      <script src="script.js"></script>
+
+       
+      
+      
+    </body>
+    </html>
     
-    
-</body>
-</html>

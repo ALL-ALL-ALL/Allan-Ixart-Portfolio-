@@ -53,10 +53,7 @@ document.getElementById('contact-form').addEventListener('submit', function(even
 
 emailjs.init("PKuTqNHDiPJMrO5bL");  // Remplacez par votre clé publique
 
-$("#contact-form").submit(function(event) {
-    event.preventDefault(); // Empêche le formulaire de se soumettre normalement
 
-    
 
     emailjs.sendForm("service_eumieoh", "template_oib4hq7", this)
         .then(function() {
@@ -137,3 +134,8 @@ jQuery(document).ready(function($) {
 
 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
 const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
+
+
+
+
