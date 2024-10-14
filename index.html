@@ -379,22 +379,7 @@
     </script>
 
 
-<!-- pour emailjs -->
 
-<script>
-    emailjs.init("PKuTqNHDiPJMrO5bL");  // Remplacez par votre clé publique
-    
-    $("#contact-form").submit(function(event) {
-        event.preventDefault(); // Empêche le formulaire de se soumettre normalement
-        
-        emailjs.sendForm("service_eumieoh", "template_oib4hq7", this)
-        .then(function() {
-            alert("Email envoyé avec succès !");
-        }, function(error) {
-            alert("Échec de l'envoi : " + JSON.stringify(error));
-        });
-    });
-    </script>
       
       
 
@@ -409,6 +394,22 @@
       <!-- pour lier le fichier script.js -->
       <script src="script.js"></script>
 
+<!-- email.js -->
+
+    <script>
+    emailjs.init("PKuTqNHDiPJMrO5bL");  // Remplacez par votre clé publique
+    
+    $("#contact-form").submit(function(event) {
+        event.preventDefault(); // Empêche le formulaire de se soumettre normalement
+        
+        emailjs.sendForm("service_eumieoh", "template_oib4hq7", this)
+        .then(function() {
+            alert("Email envoyé avec succès !");
+        }, function(error) {
+            alert("Échec de l'envoi : " + JSON.stringify(error));
+        });
+    });
+    </script>
        
       
       
