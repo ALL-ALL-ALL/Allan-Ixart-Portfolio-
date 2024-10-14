@@ -148,12 +148,12 @@ nav ul li a:hover {
 /********************************* FIN SECTION ABOUT ME   ***************************************/
 /********************************* DEBUT SECTION TEXTE PAGE PROJETS   ***************************/
 
-      /* sur projet titre */
+      /* sur (mes projet) */
 .title-projet{
   padding-bottom: 120px; 
   font-family: 'Tusker Grotesk' ;
   font-size: 50px;
-  letter-spacing: 5px;
+  letter-spacing: 14px;
 }
 
       /* et sur le texte juste en bas du titre avec le liens  */
@@ -256,7 +256,7 @@ nav ul li a:hover {
 /* vous avez une question */
 .title14{
   font-family: 'Tusker Grotesk' ;
-  letter-spacing: 5px;
+  letter-spacing: 7px;
   font-size: 50px;
   padding-bottom: 50px;
 }
@@ -298,10 +298,11 @@ h6{
 /* titre texte (competence) */
 .title2{
   font-family: 'Tusker Grotesk' ;
+
   letter-spacing:15px;
-  font-size: 40px;
+  font-size: 50px;
   padding-top: 150px;
-  text-decoration: underline;
+  /* text-decoration: underline; */
 
 
 }
@@ -343,9 +344,13 @@ object-fit: cover; /* Pour bien ajuster l'image dans le cercle */
 /********************************* FIN SECTION PHOTO ABOUT ME   *************************************/
 /********************************* DEBUT SECTION TEXTE QUI SUIS-JE   *********************************/
 
-
+/* qui suis-je (about me)*/
 h5{
-padding-bottom: 10px;
+
+font-family: 'Tusker Grotesk' ;
+letter-spacing: 5px;
+padding-bottom: 20px;
+font-size: 30px;
 }
 
 /********************************* FIN SECTION TEXTE QUI SUIS-JE   *********************************/
