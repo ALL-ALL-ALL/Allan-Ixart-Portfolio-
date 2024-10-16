@@ -289,10 +289,13 @@ h6{
   padding-top: 150px;
   margin-bottom: 130px; /* Espacement sous competence*/
   font-size: 20px;
-  letter-spacing: 14px;
+  letter-spacing: 10px;
 
+}
 
-  /* text-decoration: underline; */
+.title1{
+  padding-top: 30px;
+  letter-spacing: 2px;
 
 
 }
@@ -314,6 +317,7 @@ h6{
 /* photo de allan */
 
 .photo-allan{
+
   
 padding-bottom: 200px;
 border-radius: 50%;
