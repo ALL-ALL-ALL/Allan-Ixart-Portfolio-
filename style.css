@@ -25,15 +25,28 @@ body {
 
 }
 /********************************* FIN CUSTOM LOGO  *********************************/
-/********************************* DEBUT CUSTOM ICONE   *********************************/
+/********************************* DEBUT allan-logo ICONE   *********************************/
 
 
-.iconesvg{
-  color: #ffffff;
-  
+.allanlogo {
+position: relative;
+margin-left: 58px;
+
+
+  width: 70px; /* Ajuste la largeur à ta convenance */
+  height: auto; /* Garde les proportions de l'image */
 }
 
-/********************************* FIN CUSTOM ICONE   *********************************/
+
+
+
+
+
+
+
+
+
+/********************************* FIN allan-logo ICONE   *********************************/
 /********************************* DEBUT SECTION LOGO SOCIAUX  *********************************/
 
 
@@ -94,6 +107,26 @@ padding-bottom: 10px;
 
 }
 
+/* allan ixart */
+.title3{
+  font-size: 30px;
+
+  letter-spacing: 7px;
+
+
+}
+
+
+/* developeur web */
+.title4{
+  font-size: 30px;
+
+  letter-spacing: 7px;
+
+
+}
+
+
 /********************************* FIN TEXTE PAGE HELLO   ****************************************************/
 /********************************* SECTION MENUE DEROULANT  **************************************************/
 
@@ -139,11 +172,12 @@ nav ul li a:hover {
 /********************************* FIN SECTION A PROPOS   ***************************************/
 /********************************* DEBUT SECTION TEXTE PAGE PROJETS   ***************************/
 
-      /* sur (mes projet) */
+      /* texte (mes projet) */
 .title-projet{
-  padding-bottom: 120px; 
-  font-size: 20px;
-  letter-spacing: 14px;
+  padding-bottom: 120px;
+  font-style: italic;
+  letter-spacing: 2px; 
+  
 }
 
       /* et sur le texte juste en bas du titre avec le liens  */
@@ -224,6 +258,15 @@ nav ul li a:hover {
 
 }
 
+@media (max-width: 425px) {
+  .card {
+      max-width: 768px; /* Limite la largeur des cartes à 425px */
+      margin: 0 auto;   /* Centre la carte sur l'écran */
+  }
+}
+
+
+
 
 
 
@@ -245,9 +288,9 @@ nav ul li a:hover {
 
 /* vous avez une question */
 .title14{
-  letter-spacing: 7px;
-  font-size: 20px;
+  letter-spacing: 2px;
   padding-bottom: 50px;
+  font-style: italic;
 }
 
 
@@ -284,17 +327,20 @@ h6{
 /********************************* FIN SECTION FOOTTER   *******************************************/
 /********************************* DEBUT SECTION COMPETENCE LOGO   *********************************/
 
-/* titre texte (competence)et (qui suis-je) */
+/* titre texte(qui suis-je) */
 .title2{
   padding-top: 150px;
-  margin-bottom: 130px; /* Espacement sous competence*/
-  font-size: 20px;
-  letter-spacing: 10px;
+  margin-bottom: 130px; 
+  letter-spacing: 2px;
+  font-style: italic;
 
 }
 
+/* titre texte (competences) */
 .title1{
-  padding-top: 30px;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  font-style: italic;
   letter-spacing: 2px;
 
 
