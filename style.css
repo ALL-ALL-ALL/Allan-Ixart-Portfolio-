@@ -89,7 +89,7 @@ padding-bottom: 10px;
 /********************************* DEBUT POUR METTRE EN PLACE LES FONT PERSO  *********************************/
 
 
-      /* pour mettre en place une font-familly tusker */
+      /* pour mettre en place une font-familly tusker que je n'ai plus utiliser au final */
 @font-face {
   font-family: 'Tusker Grotesk';
   src: url('fonts/TuskerGrotesk-3800Super.woff2') format('woff2');
@@ -134,18 +134,33 @@ padding-bottom: 10px;
 .dropdown-menu {
   background-color: rgba(11, 2, 2, 0.1); /* Fond noir avec transparence c'est le 0.1 */
   border: none;
+  color: gray
 }
 
         /* Couleur du texte en blanc du menu deroulant */
 .dropdown-item {
   color: white; 
+  
 }
+
+.dropdown-item.active, .dropdown-item:active{
+  background-color: #33393f; 
+}
+
 
       /* menu deroulant */
 .dropdown-item:hover {
   background-color: #33393f; /* Couleur de fond lors du survol des categories */
   color: white; /* Couleur du texte lors du survol */
 }
+
+
+
+
+
+
+
+
 
         /* Transition pour l'effet de zoom */
 nav ul li a {
