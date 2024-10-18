@@ -143,9 +143,10 @@ padding-bottom: 10px;
   
 }
 
-.dropdown-item.active, .dropdown-item:active{
+.dropdown-item.active{
   background-color: #33393f; 
 }
+
 
 
       /* menu deroulant */
