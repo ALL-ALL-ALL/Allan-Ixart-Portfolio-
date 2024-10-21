@@ -66,8 +66,3 @@ jQuery(document).ready(function($) {
 
 
 // /::::/::::::::::::::::::::::FIN DU MENU DEROULANT:::::::::::::::::::::::::::::::::::::::::
-
-
-
-
-
