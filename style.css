@@ -24,3 +24,17 @@ body{background-image:url('hao-wang-pVq6YhmDPtk-unsplash.webp');background-attac
     overflow: hidden;
   }
 
+  @media (max-width: 576px) {
+    .btn-group-sm .btn {
+      padding: 0.25rem 0.5rem;
+      font-size: 0.75rem;
+    }
+    
+    .card-title {
+      font-size: 1.1rem;
+    }
+    
+    .card-text {
+      font-size: 0.9rem;
+    }
+  }
