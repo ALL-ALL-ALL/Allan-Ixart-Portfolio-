@@ -7,6 +7,7 @@ body{background-image:url('hao-wang-pVq6YhmDPtk-unsplash.webp');background-attac
   .card-title {
     font-weight: 500;
     margin-bottom: 0.75rem;
+    
   }
   
   .card:hover {
@@ -24,17 +25,64 @@ body{background-image:url('hao-wang-pVq6YhmDPtk-unsplash.webp');background-attac
     overflow: hidden;
   }
 
-  @media (max-width: 576px) {
-    .btn-group-sm .btn {
-      padding: 0.25rem 0.5rem;
-      font-size: 0.75rem;
-    }
-    
-    .card-title {
-      font-size: 1.1rem;
-    }
-    
-    .card-text {
-      font-size: 0.9rem;
-    }
+ /* Styles pour s'assurer que card-body prend toute la largeur sur mobile */
+ @media (max-width: 767px) {
+  /* Container moins de padding sur mobile */
+  .container {
+    padding-left: 5px;
+    padding-right: 5px;
   }
+  .btn-group .btn {
+    padding: 0.25rem 0.5rem !important;
+    font-size: 0.75rem !important;
+  }
+
+  
+  /* Colonnes sans padding horizontal sur mobile */
+  .col-12 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  /* Cartes pleine largeur */
+  .card {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    border-radius: 0;
+  }
+  
+  /* Corps de la carte avec plus d'espace */
+  .card-body {
+    padding: 1.5rem;
+    width: 100%;
+  }
+  
+  /* Image également pleine largeur */
+  .card-img-top {
+    width: 100%;
+    border-radius: 0;
+  }
+  
+  /* Plus d'espace entre les projets */
+  .col-12 {
+    margin-bottom: 1rem;
+  }
+  
+  /* Ajustement pour la grille */
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  /* Augmenter l'espace pour le texte */
+  .card-text {
+    margin-bottom: 1.5rem;
+  }
+
+
+
+
+
+
+}
