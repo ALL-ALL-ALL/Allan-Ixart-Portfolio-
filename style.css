@@ -4,3 +4,23 @@ body{background-image:url('hao-wang-pVq6YhmDPtk-unsplash.webp');background-attac
 
 
 
+  .card-title {
+    font-weight: 500;
+    margin-bottom: 0.75rem;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+  }
+  
+  .card {
+    transition: transform 0.3s ease;
+    height: 100%;
+  }
+  
+  .card-text {
+    height: 4.5rem;
+    overflow: hidden;
+  }
+
