@@ -236,4 +236,18 @@ body{background-image:url('hao-wang-pVq6YhmDPtk-unsplash.webp');background-attac
     margin-left: 0;
     margin-right: 0;
   }
+
+  /* pour le logo */
+  #logo {
+    cursor: pointer; /*  effet visuel pour indiquer que c'est cliquable */
+}
+
+#bbb{
+  color: #ffffff;
+}
+
+
+
+
+
 }
