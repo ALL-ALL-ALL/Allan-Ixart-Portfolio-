@@ -248,7 +248,10 @@ body{background-image:url('hao-wang-pVq6YhmDPtk-unsplash.webp');background-attac
 }
 
 
+}
+/* fin style media */
 
-
-
+.junior {
+  margin-top: 100px;
+  font-weight: normal;
 }
