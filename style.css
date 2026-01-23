@@ -249,9 +249,27 @@ body{background-image:url('hao-wang-pVq6YhmDPtk-unsplash.webp');background-attac
 
 
 }
-/* fin style media */
+/* FIN DE STYLE MEDIA *//* FIN DE STYLE MEDIA *//* FIN DE STYLE MEDIA *//* FIN DE STYLE MEDIA */
+
+
 
 .junior {
   margin-top: 100px;
   font-weight: normal;
+}
+
+/* Styles pour juste 2 icônes */
+.swift-icon{
+color: #9797fe; /* orange Swift */
+}
+
+.ios-icon {
+color: #9797fe; /* noir Apple / iOS */
+}
+
+
+/* Texte et icone avec effet hover "loupe" */
+.icon:hover {
+  transform: scale(1.4);
+  transition: transform 0.3s ease;
 }
