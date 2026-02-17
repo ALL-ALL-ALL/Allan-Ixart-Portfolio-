@@ -111,7 +111,21 @@ nav ul li a:hover { transform: scale(0.9); }
 /* ==========================================================================
    5. RESPONSIVE (MOBILE & TABLETTE)
    ========================================================================== */
-
+/* Commentaire : Ce bloc force les colonnes et les cartes à prendre 
+   100% de la largeur réelle du téléphone sans marges inutiles. */
+@media (max-width: 576px) {
+    #projet .container {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        max-width: 100% !important;
+    }
+    
+    .card {
+        width: 100% !important;
+        border-radius: 0 !important; /* Un look plus moderne sur mobile */
+        margin: 0 !important;
+    }
+}
 /* Tablettes et Mobiles */
 /* Ce bloc cible uniquement les téléphones en mode vertical (portrait) */
 /* ==========================================================================
