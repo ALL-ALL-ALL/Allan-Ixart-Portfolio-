@@ -67,9 +67,9 @@ nav ul li a:hover { transform: scale(0.9); }
 
 /* CORRECTION MAJEURE : Largeur flexible pour l'image */
 .card-img-top {
-    object-fit: cover; /* Remplit sans écraser */
-    height: 250px;
-    width: 100%; /* S'adapte au container */
+    object-fit: cover; 
+    height: 250px;     
+    width: 100% !important; /* Force l'image à ne pas dépasser de la carte */
     transition: transform 0.3s;
 }
 
@@ -111,21 +111,22 @@ nav ul li a:hover { transform: scale(0.9); }
    ========================================================================== */
 
 /* Tablettes et Mobiles */
-@media (max-width: 768px) {
-    .section { padding: 50px 10px; }
-    
-    .allanlogo { margin-left: 10px; }
-
-    .card-img-top { height: 200px; }
-
-    /* Forcer la largeur pleine sur mobile */
+/* Ce bloc cible uniquement les téléphones en mode vertical (portrait) */
+@media (max-width: 576px) {
+    .card {
+        width: 100% !important; /* Force la carte à prendre toute la largeur */
+        max-width: none !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
     .container {
-        max-width: 100%;
-        padding-left: 15px;
-        padding-right: 15px;
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+    .row {
+        margin: 0 !important; /* Supprime les marges négatives qui décalent tout */
     }
 }
-
 /* Très petits écrans (iPhone SE, etc.) */
 @media (max-width: 425px) {
     .title-projet { padding-bottom: 60px; }
