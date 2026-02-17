@@ -184,11 +184,14 @@ body{background-image:url('hao-wang-pVq6YhmDPtk-unsplash.webp');background-attac
   }
   
   /* Images en pleine largeur */
-  .card-img-top {
-    width: 100vw;
-    max-width: none;
-    height: 180px;
-  }
+
+.card-img-top {
+    object-fit: cover; /* Mieux que 'fill' pour ne pas écraser l'image */
+    height: 250px;     /* On garde une hauteur fixe pour l'alignement */
+    width: 100%;       /* LARGEUR FLEXIBLE */
+    transition: transform 0.3s;
+    border-radius: 5px;
+}
   
   /* Corps de carte plus grand */
   .card-body {
