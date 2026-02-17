@@ -114,41 +114,6 @@ nav ul li a:hover { transform: scale(0.9); }
 
 /* Tablettes et Mobiles */
 /* Ce bloc cible uniquement les téléphones en mode vertical (portrait) */
-@media (max-width: 576px) {
-    .card {
-        width: 100% !important; /* Force la carte à prendre toute la largeur */
-        max-width: none !important;
-        margin-left: 0 !important;
-        margin-right: 0 !important;
-    }
-    .container {
-        padding-left: 10px !important;
-        padding-right: 10px !important;
-    }
-    .row {
-        margin: 0 !important; /* Supprime les marges négatives qui décalent tout */
-    }
-}
-/* Très petits écrans (iPhone SE, etc.) */
-@media (max-width: 425px) {
-    .title-projet { padding-bottom: 60px; }
-    
-    .card {
-        margin-bottom: 20px;
-        width: 100%;
-    }
-
-    .btn-group {
-        display: flex;
-        width: 100%;
-    }
-
-    .btn-group .btn {
-        flex: 1;
-        font-size: 0.8rem;
-    }
-}
-
 /* ==========================================================================
    6. FOOTER & CONTACT
    ========================================================================== */
