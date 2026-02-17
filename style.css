@@ -65,11 +65,13 @@ nav ul li a:hover { transform: scale(0.9); }
     transform: translateY(-5px);
 }
 
-/* CORRECTION MAJEURE : Largeur flexible pour l'image */
+
 .card-img-top {
-    object-fit: cover; 
-    height: 250px;     
-    width: 100% !important; /* Force l'image à ne pas dépasser de la carte */
+    object-fit: contain; 
+    height: auto;       /* Laisse la hauteur s'ajuster proportionnellement */
+    max-height: 250px;  /* Limite la hauteur pour garder de la place pour le texte */
+    width: 100% !important; 
+    background-color: #f8f9fa;
     transition: transform 0.3s;
 }
 
