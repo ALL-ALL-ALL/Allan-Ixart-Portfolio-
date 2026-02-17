@@ -1,278 +1,159 @@
-/* Code CSS existant */
-body{background-image:url('hao-wang-pVq6YhmDPtk-unsplash.webp');background-attachment:fixed;background-size:cover;background-position:center;background-repeat:no-repeat;height:100vh;margin:0;}.custom-toggler .navbar-toggler-icon{background-image:url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='white' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' d='M5 7h20M5 15h20M5 23h20'/%3E%3C/svg%3E");}.allanlogo{position:relative;margin-left:58px;}.git{color:rgb(52,52,207);font-size:30px;margin-right:15px;}.link{color:rgb(127,57,194);font-size:30px;margin-right:15px;}.env{color:green;font-size:30px;margin-right:15px;}.footer ul{margin-top:-10px;padding-bottom:10px;}@font-face{font-family:'Tusker Grotesk';src:url('fonts/TuskerGrotesk-3800Super.woff2') format('woff2');font-weight:normal;font-style:normal;}#hello{margin-top:60px;color:#ffffff;}.title3,.title4{font-size:30px;letter-spacing:7px;}.dropdown-menu{background-color:rgba(11,2,2,0.1);border:none;color:gray;}.dropdown-item{color:white;}.dropdown-item.active{background-color:#33393f;}.dropdown-item:hover{background-color:#33393f;color:white;}nav ul li a{transition:transform 0.2s ease;}nav ul li a:hover{transform:scale(0.9);}.section{color:#ffffff;padding:100px;}.title-projet{padding-bottom:120px;font-style:italic;letter-spacing:2px;}.lead{padding-bottom:100px;}.btn-primary{transition:background-color 0.3s ease;}.btn-primary:hover{background-color:#004691;}.card-img-top{object-fit:fill;height:25rem;width:24rem;transition:transform 0.3s;border-radius:5px;}.card-img-top:hover{transform:scale(1.05);}#card-text1,#card-text2,#card-text3,#card-text4,#card-text5,#card-text6{padding-top:30px;}#contact-form{color:#ffffff;}@media (max-width:425px){.card{max-width:768px;margin:0 auto;}}.droits{color:#ffffff;}.title14{letter-spacing:2px;padding-bottom:50px;font-style:italic;}h6{padding-top:20px;}.bas{position:relative;top:230px;}.modal-body{color:black;}.mentionLink{font:bold;letter-spacing:2px;font-size:17px;}.title2{padding-top:150px;margin-bottom:130px;letter-spacing:2px;font-style:italic;}.title1{padding-top:150px;padding-bottom:150px;font-style:italic;letter-spacing:2px;}.icon{font-size:40px;margin:20px 0;}.photo-allan{padding-bottom:200px;border-radius:50%;object-fit:cover;}.video-container {position: relative;padding-bottom: 56.25%; height: 0;overflow: hidden;}.video-container iframe {position: absolute;top: 0;left: 0;width: 100%;height: 100%;}
-.card-title {
- font-weight: 500;
- margin-bottom: 0.75rem;
- }
-.card:hover {
- transform: translateY(-5px);
- transition: transform 0.3s ease;
- }
- 
+/* ==========================================================================
+   1. BASE & TYPOGRAPHIE
+   ========================================================================== */
+@font-face {
+    font-family: 'Tusker Grotesk';
+    src: url('fonts/TuskerGrotesk-3800Super.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-image: url('hao-wang-pVq6YhmDPtk-unsplash.webp');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    margin: 0;
+    color: #ffffff;
+}
+
+.section {
+    padding: 100px 15px; /* Réduit pour éviter les débordements */
+}
+
+/* ==========================================================================
+   2. NAVIGATION & LOGO
+   ========================================================================== */
+.allanlogo {
+    position: relative;
+    margin-left: 20px; /* Ajusté pour mobile */
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='white' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' d='M5 7h20M5 15h20M5 23h20'/%3E%3C/svg%3E");
+}
+
+.dropdown-menu {
+    background-color: rgba(0, 0, 0, 0.8);
+    border: none;
+}
+
+.dropdown-item { color: white; }
+.dropdown-item:hover, .dropdown-item.active {
+    background-color: #33393f;
+    color: white;
+}
+
+nav ul li a { transition: transform 0.2s ease; }
+nav ul li a:hover { transform: scale(0.9); }
+
+/* ==========================================================================
+   3. CARTES PROJETS (UI/UX)
+   ========================================================================== */
 .card {
- transition: transform 0.3s ease;
- height: 100%;
- }
-.card-text {
- height: 4.5rem;
- overflow: hidden;
- }
-
-/* Styles pour s'assurer que card-body prend toute la largeur sur mobile */
-@media (max-width: 767px) {
-  /* Container moins de padding sur mobile */
-  .container {
-    padding-left: 5px;
-    padding-right: 5px;
-    max-width: 100%;
-  }
-  
-  .btn-group .btn {
-    padding: 0.25rem 0.5rem !important;
-    font-size: 0.75rem !important;
-  }
-  
-  /* Colonnes sans padding horizontal sur mobile */
-  .col, .col-12, [class*="col-"] {
-    padding-left: 0;
-    padding-right: 0;
-    max-width: 100%;
-  }
-  
-  /* Cartes pleine largeur */
-  .card {
-    width: 100%;
-    margin-left: 0;
-    margin-right: 0;
-    border-radius: 0;
-  }
-  
-  /* Corps de la carte avec plus d'espace */
-  .card-body {
-    padding: 1.5rem;
-    width: 100%;
-  }
-  
-  /* Image également pleine largeur */
-  .card-img-top {
-    width: 100%;
-    border-radius: 0;
-    height: 200px;
-    object-fit: cover;
-  }
-  
-  /* Plus d'espace entre les projets */
-  .col-12 {
-    margin-bottom: 1rem;
-  }
-  
-  /* Ajustement pour la grille */
-  .row {
-    margin-left: 0;
-    margin-right: 0;
-  }
-  
-  /* Augmenter l'espace pour le texte */
-  .card-text {
-    margin-bottom: 1.5rem;
-    height: auto;
-  }
+    transition: transform 0.3s ease;
+    height: 100%;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
 }
 
-/* Optimisations spécifiques pour les très petits écrans (mobileS) */
-@media (max-width: 375px) {
-  /* Réduire le padding de la section */
-  .section {
-    padding: 50px 0;
-  }
-  
-  /* Élargir au maximum le container */
-  .container {
-    padding-left: 0;
-    padding-right: 0;
-    max-width: 100vw;
-    width: 100vw;
-  }
-  
-  /* Cartes en pleine largeur de l'écran */
-  .card {
-    width: 100vw;
-    margin-left: -15px;
-    margin-right: -15px;
-    border-left: none;
-    border-right: none;
-  }
-  
-  /* Images en pleine largeur */
-  .card-img-top {
-    width: 100vw;
-    max-width: none;
-    height: 180px;
-  }
-  
-  /* Corps de carte plus grand */
-  .card-body {
-    padding: 1.5rem 1rem;
-    width: 100vw;
-  }
-  
-  /* Ajuster la taille du texte pour la lisibilité */
-  .card-title {
-    font-size: 1.25rem;
-  }
-  
-  .card-text {
-    font-size: 1rem;
-    line-height: 1.4;
-  }
-  
-  /* Réduire la taille des boutons */
-  .btn-group {
-    display: flex;
-    width: 100%;
-  }
-  
-  .btn-group .btn {
-    flex: 1;
-    padding: 0.25rem 0.4rem !important;
-    font-size: 0.7rem !important;
-  }
-  
-  /* Supprimer tous les espaces inutiles */
-  .p-2 {
-    padding: 0 !important;
-    margin-bottom: 0.5rem;
-  }
-  
-  /* Corriger l'alignement */
-  .album {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-  }
-  
-  /* Forcer l'affichage hors conteneur si nécessaire */
-  .row {
-    width: 100vw;
-    max-width: 100vw;
-    margin-left: 0;
-    margin-right: 0;
-  }
+.card:hover {
+    transform: translateY(-5px);
 }
 
-/* Optimisations spécifiques pour les très petits écrans (mobileS) */
-@media (max-width: 320px) {
-  /* Réduire le padding de la section */
-  .section {
-    padding: 50px 0;
-  }
-  
-  /* Élargir au maximum le container */
-  .container {
-    padding-left: 0;
-    padding-right: 0;
-    max-width: 100vw;
-    width: 100vw;
-  }
-  
-  /* Cartes en pleine largeur de l'écran */
-  .card {
-    width: 100vw;
-    margin-left: -15px;
-    margin-right: -15px;
-    border-left: none;
-    border-right: none;
-  }
-  
-  /* Images en pleine largeur */
-
+/* CORRECTION MAJEURE : Largeur flexible pour l'image */
 .card-img-top {
-    object-fit: cover; /* Mieux que 'fill' pour ne pas écraser l'image */
-    height: 250px;     /* On garde une hauteur fixe pour l'alignement */
-    width: 100%;       /* LARGEUR FLEXIBLE */
+    object-fit: cover; /* Remplit sans écraser */
+    height: 250px;
+    width: 100%; /* S'adapte au container */
     transition: transform 0.3s;
-    border-radius: 5px;
-}
-  
-  /* Corps de carte plus grand */
-  .card-body {
-    padding: 1.5rem 1rem;
-    width: 150vw;
-  }
-  
-  /* Ajuster la taille du texte pour la lisibilité */
-  .card-title {
-    font-size: 1.25rem;
-  }
-  
-  .card-text {
-    font-size: 1rem;
-    line-height: 1.4;
-  }
-  
-  /* Réduire la taille des boutons */
-  .btn-group {
-    display: flex;
-    width: 100%;
-  }
-  
-  .btn-group .btn {
-    flex: 1;
-    padding: 0.25rem 0.4rem !important;
-    font-size: 0.7rem !important;
-  }
-  
-  /* Supprimer tous les espaces inutiles */
-  .p-2 {
-    padding: 0 !important;
-    margin-bottom: 0.5rem;
-  }
-  
-  /* Corriger l'alignement */
-  .album {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-  }
-  
-  /* Forcer l'affichage hors conteneur si nécessaire */
-  .row {
-    width: 100vw;
-    max-width: 100vw;
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  /* pour le logo */
-  #logo {
-    cursor: pointer; /*  effet visuel pour indiquer que c'est cliquable */
 }
 
-#bbb{
-  color: #ffffff;
+.card-img-top:hover {
+    transform: scale(1.05);
 }
 
-
-}
-/* FIN DE STYLE MEDIA *//* FIN DE STYLE MEDIA *//* FIN DE STYLE MEDIA *//* FIN DE STYLE MEDIA */
-
-
-
-.junior {
-  margin-top: 100px;
-  font-weight: normal;
+.card-title {
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    color: #333;
 }
 
-/* Styles pour juste 2 icônes */
-.swift-icon{
-color: #9797fe; 
+.card-text {
+    color: #555;
+    height: auto;
+    max-height: 160px;
+    overflow-y: auto;
 }
 
-.ios-icon {
-color: #9797fe; 
+/* ==========================================================================
+   4. COMPÉTENCES & ICONES
+   ========================================================================== */
+.icon {
+    font-size: 40px;
+    margin: 20px 0;
+    transition: transform 0.3s ease;
 }
 
-
-/* Texte et icone avec effet hover "loupe" */
 .icon:hover {
-  transform: scale(1.4);
-  transition: transform 0.3s ease;
+    transform: scale(1.4);
 }
+
+.swift-icon, .ios-icon { color: #9797fe; }
+.junior { margin-top: 100px; }
+
+/* ==========================================================================
+   5. RESPONSIVE (MOBILE & TABLETTE)
+   ========================================================================== */
+
+/* Tablettes et Mobiles */
+@media (max-width: 768px) {
+    .section { padding: 50px 10px; }
+    
+    .allanlogo { margin-left: 10px; }
+
+    .card-img-top { height: 200px; }
+
+    /* Forcer la largeur pleine sur mobile */
+    .container {
+        max-width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+/* Très petits écrans (iPhone SE, etc.) */
+@media (max-width: 425px) {
+    .title-projet { padding-bottom: 60px; }
+    
+    .card {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .btn-group {
+        display: flex;
+        width: 100%;
+    }
+
+    .btn-group .btn {
+        flex: 1;
+        font-size: 0.8rem;
+    }
+}
+
+/* ==========================================================================
+   6. FOOTER & CONTACT
+   ========================================================================== */
+.bas { margin-top: 50px; }
+
+.git { color: #3434cf; font-size: 30px; margin-right: 15px; }
+.link { color: #7f39c2; font-size: 30px; margin-right: 15px; }
+.env { color: green; font-size: 30px; margin-right: 15px; }
+
+.mentionLink { font-weight: bold; letter-spacing: 1px; }
+.modal-body { color: #000; }
