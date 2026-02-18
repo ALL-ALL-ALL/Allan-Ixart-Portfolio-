@@ -17,10 +17,11 @@ body {
     min-height: 100vh;
     margin: 0;
     color: #ffffff;
+    overflow-x: hidden; /* Empêche le défilement horizontal parasite */
 }
 
 .section {
-    padding: 100px 15px; /* Réduit pour éviter les débordements */
+    padding: 100px 15px;
 }
 
 /* ==========================================================================
@@ -28,7 +29,7 @@ body {
    ========================================================================== */
 .allanlogo {
     position: relative;
-    margin-left: 20px; /* Ajusté pour mobile */
+    margin-left: 20px;
 }
 
 .custom-toggler .navbar-toggler-icon {
@@ -52,6 +53,7 @@ nav ul li a:hover { transform: scale(0.9); }
 /* ==========================================================================
    3. CARTES PROJETS (UI/UX)
    ========================================================================== */
+/* Note : On ne définit pas de largeur fixe ici pour laisser Bootstrap gérer sur PC */
 .card {
     transition: transform 0.3s ease;
     height: 100%;
@@ -59,24 +61,19 @@ nav ul li a:hover { transform: scale(0.9); }
     border: none;
     border-radius: 8px;
     overflow: hidden;
+    width: 100%; /* La carte prend la largeur de sa colonne Bootstrap */
 }
 
 .card:hover {
     transform: translateY(-5px);
 }
 
-
 .card-img-top {
     object-fit: contain; 
-    height: auto;       /* Laisse la hauteur s'ajuster proportionnellement */
-    max-height: 250px;  /* Limite la hauteur pour garder de la place pour le texte */
+    height: 250px;       
     width: 100% !important; 
     background-color: #f8f9fa;
     transition: transform 0.3s;
-}
-
-.card-img-top:hover {
-    transform: scale(1.05);
 }
 
 .card-title {
@@ -101,41 +98,57 @@ nav ul li a:hover { transform: scale(0.9); }
     transition: transform 0.3s ease;
 }
 
-.icon:hover {
-    transform: scale(1.4);
-}
-
+.icon:hover { transform: scale(1.4); }
 .swift-icon, .ios-icon { color: #9797fe; }
 .junior { margin-top: 100px; }
 
 /* ==========================================================================
-   5. RESPONSIVE (MOBILE & TABLETTE)
+   5. RESPONSIVE (LA CORRECTION)
    ========================================================================== */
-/* Commentaire : Ce bloc force les colonnes et les cartes à prendre 
-   100% de la largeur réelle du téléphone sans marges inutiles. */
+
+/* --- Configuration pour Ordinateur (3 colonnes) --- */
+@media (min-width: 992px) {
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    /* On s'assure que Bootstrap utilise bien le tiers de l'écran */
+    .col-lg-4 {
+        flex: 0 0 auto;
+        width: 33.333333%;
+    }
+}
+
+/* --- Configuration pour Mobile (1 colonne plein écran) --- */
 @media (max-width: 576px) {
+    .section {
+        padding: 60px 10px;
+    }
+
     #projet .container {
         padding-left: 0 !important;
         padding-right: 0 !important;
         max-width: 100% !important;
     }
     
+    /* La carte s'étire au maximum sur iPhone vertical */
     .card {
+        border-radius: 0 !important;
+        margin-bottom: 20px;
+    }
+
+    .col-12 {
         width: 100% !important;
-        border-radius: 0 !important; /* Un look plus moderne sur mobile */
-        margin: 0 !important;
+        padding: 0;
     }
 }
-/* Tablettes et Mobiles */
-/* Ce bloc cible uniquement les téléphones en mode vertical (portrait) */
+
 /* ==========================================================================
    6. FOOTER & CONTACT
    ========================================================================== */
 .bas { margin-top: 50px; }
-
 .git { color: #3434cf; font-size: 30px; margin-right: 15px; }
 .link { color: #7f39c2; font-size: 30px; margin-right: 15px; }
 .env { color: green; font-size: 30px; margin-right: 15px; }
-
 .mentionLink { font-weight: bold; letter-spacing: 1px; }
 .modal-body { color: #000; }
