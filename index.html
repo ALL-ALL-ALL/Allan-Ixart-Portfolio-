@@ -253,6 +253,65 @@
 
       <div class="row g-4">
 
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card shadow-sm h-100 w-100">
+            <!--ne pas oublier de mettre l'image a la place de ## -->
+            <img class="card-img-top" src="##" alt="Design Web Radio"
+              style="height: 250px; object-fit: contain; background-color: #f8f9fa;">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Trilink — App iOS de gestion de liens partagés</h5>
+              <p class="card-text"
+                style="height: 160px; overflow-y: auto; font-size: 0.9rem; text-align: justify; padding-right: 10px;">
+                Application iOS développée avec SwiftUI et SwiftData,
+                qui centralise les liens partagés depuis n'importe quelle app
+                (WhatsApp, Safari, Messages...) via une extension de partage native.<br><br>
+
+                Fonctionnalités principales:
+                - Extension de partage : Trilink apparaît directement dans le menu
+                "Partager" de n'importe quelle app, et classe automatiquement
+                chaque lien selon son type (Vidéo, Musique, Web)
+                - Récupération automatique du titre et de la miniature via
+                LinkPresentation, framework natif Apple
+                - Widget d'écran d'accueil (WidgetKit) affichant les derniers liens
+                en un coup d'œil
+                - Recherche, tri par date, et gestion du statut de lecture
+                - Catégories personnalisées et notes sur chaque lien
+                - Monétisation freemium avec StoreKit 2 (abonnements mensuel/annuel)<br><br>
+
+                Architecture technique
+                - App Group pour le partage de données entre l'app principale,
+                l'extension de partage et le widget — trois processus iOS
+                normalement isolés
+                - 100% local : aucune donnée envoyée à un serveur externe
+                - Gestion robuste des cas limites (détection des apps ne partageant
+                pas de vrai lien web, avec message explicatif)
+
+                Stack technique : Swift, SwiftUI, SwiftData, WidgetKit,
+                LinkPresentation, StoreKit 2, App Groups
+              </p>
+              <div class="mt-auto d-flex flex-column align-items-start gap-2">
+                <!-- Badge App Store officiel + le liens-->
+                <!-- ajouter le bon liens trilink-->
+                <a href="##" target="_blank">
+                  <img src="black.svg" alt="Télécharger dans l'App Store" style="height: 40px;">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <!--Design & Prototypage -->
+
         <div class="col-12 col-md-6 col-lg-4">
           <div class="card shadow-sm h-100 w-100">
             <img class="card-img-top" src="wireframe.png" alt="Design Web Radio"
@@ -281,7 +340,8 @@
                     style="color: #007bff; text-decoration: underline;">iosinterface@gmail.com</a></strong>
               </p>
               <div class="mt-auto">
-                <!-- <a href="" class="btn btn-sm btn-outline-primary">Contact</a> -->
+                <a href="" class="btn btn-sm btn-outline-primary">Contact</a>
+
               </div>
             </div>
           </div>
@@ -324,6 +384,8 @@
           </div>
         </div>
 
+        <!--LE bureau amical -->
+
         <div class="col-12 col-md-6 col-lg-4">
           <div class="card shadow-sm h-100 w-100">
             <img class="card-img-top" src="petit.png" alt="Le bureau Amical"
@@ -341,6 +403,8 @@
             </div>
           </div>
         </div>
+
+        <!--RadioClean IOS -->
 
         <div class="col-12 col-md-6 col-lg-4">
           <div class="card shadow-sm h-100 w-100">
@@ -369,6 +433,8 @@
           </div>
         </div>
 
+        <!--Pack SwiftUI -->
+
         <div class="col-12 col-md-6 col-lg-4">
           <div class="card shadow-sm h-100 w-100">
             <img class="card-img-top" src="SCR-20250405-bwpf.png" alt="Pack SwiftUI"
@@ -395,6 +461,9 @@
             </div>
           </div>
         </div>
+
+        <!--CARAMBAR AND CO -->
+
 
         <div class="col-12 col-md-6 col-lg-4">
           <div class="card shadow-sm h-100 w-100">
@@ -432,6 +501,8 @@
           </div>
         </div>
 
+        <!--RADIOLINK -->
+
         <div class="col-12 col-md-6 col-lg-4">
           <div class="card shadow-sm h-100 w-100">
             <img class="card-img-top" src="SCR-20250212-bcli.webp" alt="Radio Link"
@@ -461,6 +532,8 @@
           </div>
         </div>
 
+        <!--LE PETIT GOURMET -->
+
         <div class="col-12 col-md-6 col-lg-4">
           <div class="card shadow-sm h-100 w-100">
             <img class="card-img-top" src="SCR-20241121-bfvp.webp" alt="Le Petit Gourmet"
@@ -477,6 +550,8 @@
             </div>
           </div>
         </div>
+
+        <!-- AINAO -->
 
         <div class="col-12 col-md-6 col-lg-4">
           <div class="card shadow-sm h-100 w-100">
@@ -507,6 +582,8 @@
             </div>
           </div>
         </div>
+
+        <!--ADYA -->
 
         <div class="col-12 col-md-6 col-lg-4">
           <div class="card shadow-sm h-100 w-100">
@@ -540,6 +617,9 @@
           </div>
         </div>
 
+
+        <!--FIT ACTIVE -->
+
         <div class="col-12 col-md-6 col-lg-4">
           <div class="card shadow-sm h-100 w-100">
             <img class="card-img-top" src="SCR-20241031-cjnp.webp" alt="Fit Active"
@@ -557,6 +637,8 @@
           </div>
         </div>
 
+        <!--TO DO APP -->
+
         <div class="col-12 col-md-6 col-lg-4">
           <div class="card shadow-sm h-100 w-100">
             <img class="card-img-top" src="SCR-20241124-ciet-2.webp" alt="To Do App"
@@ -573,6 +655,8 @@
             </div>
           </div>
         </div>
+
+        <!--RANDOM DOG -->
 
         <div class="col-12 col-md-6 col-lg-4">
           <div class="card shadow-sm h-100 w-100">
@@ -604,6 +688,8 @@
             </div>
           </div>
         </div>
+
+        <!--RPG 2D -->
 
         <div class="col-12 col-md-6 col-lg-4">
           <div class="card shadow-sm h-100 w-100">
@@ -637,6 +723,8 @@
           </div>
         </div>
 
+        <!--POKÉDEX -->
+
         <div class="col-12 col-md-6 col-lg-4">
           <div class="card shadow-sm h-100 w-100">
             <img class="card-img-top" src="SCR-20240926-oozk.webp" alt="Pokedex"
@@ -663,6 +751,8 @@
             </div>
           </div>
         </div>
+
+        <!--OPENCLASSROOMS -->
 
         <div class="col-12 col-md-6 col-lg-4">
           <div class="card shadow-sm h-100 w-100">
