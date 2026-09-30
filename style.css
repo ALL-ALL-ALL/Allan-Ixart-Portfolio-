@@ -152,3 +152,24 @@ nav ul li a:hover { transform: scale(0.9); }
 .env { color: green; font-size: 30px; margin-right: 15px; }
 .mentionLink { font-weight: bold; letter-spacing: 1px; }
 .modal-body { color: #000; }
+
+
+
+
+
+/* ==========================================================================
+   7. ACCUEIL & TEXTE DE BIENVENUE ALLAN IXART 
+   ========================================================================== */
+
+#hello {
+    padding: 70px;
+    padding-top: 150px;
+
+}
+
+.section p {
+    font-family: 'Arial', italic;
+    font-style: italic;
+    line-height: 1.6;
+    color: #ffffff;
+}
