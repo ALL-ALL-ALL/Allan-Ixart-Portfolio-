@@ -98,6 +98,10 @@ nav ul li a:hover { transform: scale(0.9); }
     transition: transform 0.3s ease;
 }
 
+.title1 {
+  padding-top: 100px;
+}
+
 .icon:hover { transform: scale(1.4); }
 .swift-icon, .ios-icon { color: #9797fe; }
 .junior { margin-top: 100px; }
@@ -171,5 +175,5 @@ nav ul li a:hover { transform: scale(0.9); }
     font-family: 'Arial', italic;
     font-style: italic;
     line-height: 1.6;
-    color: #ffffff;
 }
+
