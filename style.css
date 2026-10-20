@@ -1112,28 +1112,19 @@ nav ul li a:hover { transform: scale(0.9); }
     min-width: 0;
 }
 
-#about .about-eyebrow {
-    margin: 0 0 28px;
-    color: #9b9da7;
-    font-size: 11px;
-    font-weight: 600;
-    letter-spacing: 2px;
-}
-
-#about .about-eyebrow span {
-    color: #ff304f;
-    margin-right: 8px;
-}
 
 #about .about-intro h1 {
     margin: 0;
     color: #f5f5f7;
     font-size: clamp(43px, 6.4vw, 90px);
-    font-weight: 800;
-    line-height: 0.99;
+    font-weight: 400;
     letter-spacing: -0.075em;
+    line-height: 0.99;
     overflow-wrap: anywhere;
+    font-size: 60px ;
 }
+
+
 
 #about .about-name {
     display: inline-block;
@@ -1147,6 +1138,9 @@ nav ul li a:hover { transform: scale(0.9); }
     font-size: 0.55em;
     animation: aboutBlink 1s steps(2, start) infinite;
 }
+
+
+
 
 @keyframes aboutBlink {
     to {
@@ -1447,6 +1441,7 @@ nav ul li a:hover { transform: scale(0.9); }
 
 #about .about-footer,
 #projet .about-footer,
+#hello .about-footer,
 #contact .about-footer {
     min-height: 65px;
     width: 100%;
@@ -1459,7 +1454,10 @@ nav ul li a:hover { transform: scale(0.9); }
     letter-spacing: 1.4px;
 }
 
-#about .about-footer-star {
+#about .about-footer-star,
+#projet .about-footer-star,
+#hello .about-footer-star,
+#contact .about-footer-star {
     color: #ff304f;
     padding-left: 5px;
 }
@@ -1483,15 +1481,17 @@ nav ul li a:hover { transform: scale(0.9); }
     grid-column: 2;
 }
 
+#hello .highlight {
+    color: #ff304f;
+    
+}
 /* Pied de section du projet */
 
 
-#projet .about-footer-star {
+#projet.about-footer-star {
     color: #ff304f;
     padding-left: 5px;
 }
-
-
 
 
 #contact .about-footer-star {
@@ -1538,6 +1538,10 @@ nav ul li a:hover { transform: scale(0.9); }
     height: 1px;
     background: rgba(255, 255, 255, 0.16);
 }
+
+
+
+
 
 #about .about-skills-number {
     color: #888b95;
