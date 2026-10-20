@@ -1641,10 +1641,14 @@ nav ul li a:hover { transform: scale(0.9); }
 #projet .project-heading {
     position: relative;
     margin-bottom: 28px;
+    margin-top: 120px;
     padding: 0 0 16px;
     border-left: none;
     text-align: center;
 }
+
+
+
 
 
 
