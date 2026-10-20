@@ -1559,12 +1559,13 @@ nav ul li a:hover { transform: scale(0.9); }
 
 /* Cards */
 
+
 #about .about-skill-card {
     min-width: 0;
     min-height: 150px;
     padding: 20px 18px 24px;
     border: 1px solid rgba(255, 255, 255, 0.18);
-    border-radius: 3px;
+    border-radius: 13px;
     background: rgba(8, 9, 12, 0.85);
     transition:
         border-color 0.25s ease,
@@ -1573,9 +1574,10 @@ nav ul li a:hover { transform: scale(0.9); }
 
 #about .about-skill-card:hover {
     border-color: rgba(255, 48, 79, 0.45);
-    background: rgba(255, 255, 255, 0.03);
+    background: rgba(8, 9, 12, 0.95);
     
 }
+
 
 #about .about-skill-card h3 {
     margin: 0 0 22px;
