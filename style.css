@@ -816,43 +816,15 @@ nav ul li a:hover { transform: scale(0.9); }
 
 /* Description sous chaque bannière */
 
-#carouselApps .carousel-description {
 
-  position: relative;
-
-  margin-top: -20px;
-
-  padding: 1.5rem 3rem 1.5rem;
-
-  background: rgba(0, 0, 0, 0.55);
-
-  border-radius: 0 0 12px 12px;
-
-}
 
 /* h4   */
 
-#carouselApps .carousel-description h4 {
 
-  color: #fff;
-
-  font-size: 1.5rem;
-
-  margin-bottom: 0.75rem;
-
-}
 
 /* paragrph  */
 
-#carouselApps .carousel-description p {
 
-  color: #f1f1f1;
-
-  line-height: 1.7;
-
-  margin-bottom: 1.25rem;
-
-}
 
 /* Indicateurs */
 
@@ -1050,17 +1022,9 @@ nav ul li a:hover { transform: scale(0.9); }
 
 @media (max-width: 576px) {
 
-  #carouselApps .carousel-description {
+  
 
-    padding: 1.25rem 1rem;
-
-  }
-
-  #carouselApps .carousel-description h4 {
-
-    font-size: 1.3rem;
-
-  }
+  
 
   #carouselApps .carousel-control-prev,
 
@@ -1082,46 +1046,9 @@ nav ul li a:hover { transform: scale(0.9); }
 
 }
 
-/* Adaptation mobile et tablette */
-
-@media (max-width: 767.98px) {
-
-  #carouselApps .carousel-description {
-
-    margin-top: 0;
-
-  }
-
-}
-
-/* pourMobiles M et L */
-
-@media (min-width: 375px) and (max-width: 575.98px) {
-
-  #carouselApps .carousel-description {
-
-    margin-top: -8px;
-
-    padding: 1.25rem 1rem;
-
-  }
-
-}
-
-/* Tablettes jusqu'à 768 px */
-
-@media (min-width: 576px) and (max-width: 767.98px) {
-
-  #carouselApps .carousel-description {
-
-    margin-top: -12px;
-
-    padding: 1.5rem 2rem;
-
-  }
 
 
-}
+
 
 
 
@@ -1516,10 +1443,13 @@ nav ul li a:hover { transform: scale(0.9); }
     );
 }
 
-/* Pied de section */
+/* Pied de section a propos */
 
-#about .about-footer {
+#about .about-footer,
+#projet .about-footer,
+#contact .about-footer {
     min-height: 65px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1534,21 +1464,43 @@ nav ul li a:hover { transform: scale(0.9); }
     padding-left: 5px;
 }
 
-#projet .about-footer {
-    min-height: 65px;
-    display: flex;
-    justify-content: space-between;
+/* pour le formulaire allan enjoy sois sur la meme ligne*/
+#contact .about-footer {
+    grid-column: 1 / -1;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
-    gap: 15px;
-    color: #666a75;
-    font-size: 9px;
-    letter-spacing: 1.4px;
+    min-height: 65px;
 }
 
-#project .about-footer-star {
+#contact .about-footer > span:first-child {
+    justify-self: start;
+}
+
+#contact .about-footer .footer-enjoy {
+    justify-self: end;
+    grid-column: 2;
+}
+
+/* Pied de section du projet */
+
+
+#projet .about-footer-star {
     color: #ff304f;
     padding-left: 5px;
 }
+
+
+
+
+#contact .about-footer-star {
+    color: #ff304f;
+    padding-left: 0;
+    margin-left: 2px;
+}
+
+
 
 
 
@@ -1681,3 +1633,67 @@ nav ul li a:hover { transform: scale(0.9); }
 
 
 
+/* En-tête centré des catégories de projets */
+#projet .project-heading {
+    position: relative;
+    margin-bottom: 28px;
+    padding: 0 0 16px;
+    border-left: none;
+    text-align: center;
+}
+
+
+
+
+
+#projet .project-index {
+    color: #777987;
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+#projet .project-heading h3 {
+    margin: 0 0 8px;
+    text-align: center;
+    font-weight: 700;
+}
+
+#projet .project-subtitle {
+    margin: 0;
+    color: #8d91a5;
+    font-size: 9px;
+    letter-spacing: 1.5px;
+}
+
+#projet .project-heading-line {
+    height: 1px;
+    margin-top: 16px;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 48, 79, 0.65),
+        rgba(65, 105, 255, 0.3),
+        transparent
+    );
+}
+
+
+
+/* Indicateurs ronds du carrousel */
+#carouselApps .carousel-indicators [data-bs-target] {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 0;
+    margin: 0 5px;
+    opacity: 0.5;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    margin: 0 8px;
+}
+
+/* Rond de la diapositive active */
+#carouselApps .carousel-indicators .active {
+    opacity: 1;
+    transform: scale(1.2);
+    background-color: #ff304f;
+}
