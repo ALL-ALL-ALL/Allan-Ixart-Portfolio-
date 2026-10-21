@@ -1769,18 +1769,7 @@ nav ul li a:hover { transform: scale(0.9); }
     letter-spacing: 1.4px;
 }
 
-#about .about-footer-star,
 
-#projet .about-footer-star,
-
-#hello .about-footer-star,
-
-#contact .about-footer-star {
-
-    color: #ff304f;
-
-    padding-left: 5px;
-}
 
 /* pour le formulaire allan enjoy sois sur la meme ligne*/
 
@@ -1816,23 +1805,6 @@ nav ul li a:hover { transform: scale(0.9); }
     color: #ff304f;
 }
 
-/* Pied de section du projet */
-
-#projet.about-footer-star {
-
-    color: #ff304f;
-
-    padding-left: 5px;
-}
-
-#contact .about-footer-star {
-
-    color: #ff304f;
-
-    padding-left: 0;
-
-    margin-left: 2px;
-}
 
 /* ==========================================
 

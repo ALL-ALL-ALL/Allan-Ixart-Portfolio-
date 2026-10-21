@@ -101,9 +101,8 @@
 
     <!-- Pied de section -->
     <footer class="about-footer">
-      <span>ALLAN IXART © 2026</span>
-
-      <span>ENJOY <span class="about-footer-star">✳</span></span>
+      <span>ALLAN IXART © <span class="annee"></span></span>
+      <span class="footer-enjoy">ENJOY</span>
     </footer>
 
   </section>
@@ -290,9 +289,11 @@
     </div>
 
     <!-- Pied de section -->
+
     <footer class="about-footer">
-      <span>ALLAN IXART © 2026</span>
-      <span>ENJOY <span class="about-footer-star">✳</span></span>
+
+      <span>ALLAN IXART © <span class="annee"></span></span>
+      <span class="footer-enjoy">ENJOY</span>
     </footer>
 
 
@@ -1168,8 +1169,8 @@
 
       <!-- Pied de section -->
       <footer class="about-footer">
-        <span>ALLAN IXART © 2026</span>
-        <span>ENJOY <span class="about-footer-star">✳</span></span>
+        <span>ALLAN IXART © <span class="annee"></span></span>
+        <span class="footer-enjoy">ENJOY</span>
       </footer>
 
     </div>
@@ -1298,8 +1299,8 @@
 
 
       <footer class="about-footer">
-        <span>ALLAN IXART © 2026</span>
-        <span class="footer-enjoy">ENJOY<span class="about-footer-star">✳</span></span>
+        <span>ALLAN IXART © <span class="annee"></span></span>
+        <span class="footer-enjoy">ENJOY</span>
       </footer>
 
 
@@ -1335,11 +1336,6 @@
       $('#logo-container').show(); // Réapparaît l'image
     });
   </script>
-
-
-
-
-
 
 
   <!-- pour la transition des section smouth  -->
@@ -1394,9 +1390,11 @@
   </script>
 
 
-  <!-- pour l'année dynamique -->
+  <!-- Année dynamique -->
   <script>
-    document.getElementById("annee").textContent = new Date().getFullYear();
+    document.querySelectorAll(".annee").forEach((element) => {
+      element.textContent = new Date().getFullYear();
+    });
   </script>
 
 
