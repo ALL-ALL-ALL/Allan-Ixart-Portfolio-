@@ -2760,3 +2760,28 @@ nav ul li a:hover { transform: scale(0.9); }
     }
 
 }
+
+/* pour que limage ne puisse pas bouger lors du scroll galerer */
+
+@media (max-width: 768px) {
+    body {
+        background-image: none;
+    }
+
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+
+    background-image: url("hao-wang-pVq6YhmDPtk-unsplash.webp");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    pointer-events: none;
+}
+}
