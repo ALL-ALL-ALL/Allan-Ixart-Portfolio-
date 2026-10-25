@@ -352,7 +352,12 @@ const CircularCarousel = ({
       }
       const spanX = Math.max(maxX - minX, 1);
       const spanY = Math.max(maxY - minY, 1);
-      const fit = Math.min(1, width / spanX, height / spanY);
+            // Sur mobile : on dimensionne sur la carte de devant, les cartes de côté dépassent de l'écran
+      const narrow = rect.width < 768;
+      const fit = narrow
+        ? Math.min(1, (rect.width * 0.85) / s.cardW, height / spanY)
+          : Math.min(1, width / spanX, height / spanY);
+        
       state.fit = fit;
       state.shift = -((minY + maxY) / 2) * fit - room / 2;
       state.drop = s.axis === 'x' ? (rect.width / fit) * 0.55 + s.cardW : (rect.height / fit) * 0.55 + s.cardH;

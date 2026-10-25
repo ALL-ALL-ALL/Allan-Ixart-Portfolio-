@@ -912,7 +912,7 @@ nav ul li a:hover { transform: scale(0.9); }
 
   object-fit: contain;
 
-  border-radius: 200px 200px 200px 200px;
+  border-radius: 100px 100px 0 0;
 
 }
 
@@ -2786,4 +2786,11 @@ nav ul li a:hover { transform: scale(0.9); }
 
     pointer-events: none;
 }
+}
+
+@media (max-width: 767.98px) {
+  .carousel-apps {
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+  }
 }
