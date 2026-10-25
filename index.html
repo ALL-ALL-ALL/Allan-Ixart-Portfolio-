@@ -37,6 +37,7 @@
   </script>
 
 
+  <link rel="stylesheet" href="CircularCarousel.css">
 
 
   <!-- meta-description -->
@@ -390,92 +391,7 @@
       </div>
 
       <!-- Carrousel des applications -->
-      <div id="carouselApps" class="carousel slide carousel-apps" data-bs-ride="carousel">
-
-        <!-- Indicateurs -->
-        <div class="carousel-indicators">
-
-          <button type="button" data-bs-target="#carouselApps" data-bs-slide-to="0" class="active" aria-current="true"
-            aria-label="TripLite Travel">
-          </button>
-
-          <button type="button" data-bs-target="#carouselApps" data-bs-slide-to="1" aria-label="Trilink">
-          </button>
-
-          <button type="button" data-bs-target="#carouselApps" data-bs-slide-to="2" aria-label="Capsule Lettres">
-          </button>
-
-        </div>
-
-        <!-- Contenu du carrousel -->
-        <div class="carousel-inner">
-
-          <!-- TripLite Travel -->
-          <div class="carousel-item active">
-
-            <a href="https://apps.apple.com/app/triplite-travel/id6782731648" target="_blank" rel="noopener noreferrer"
-              aria-label="Télécharger TripLite Travel sur l’App Store">
-
-              <img src="Publicité bannière paysage - 1200x720 3.png" class="d-block w-100"
-                alt="Bannière de l’application TripLite Travel">
-
-            </a>
-
-
-
-          </div>
-
-          <!-- Trilink -->
-          <div class="carousel-item">
-
-            <a href="https://apps.apple.com/fr/app/trilink/id6807498870" target="_blank" rel="noopener noreferrer"
-              aria-label="Télécharger Trilink sur l’App Store">
-
-              <img src="Publicité bannière paysage - 1200x720 2.png" class="d-block w-100"
-                alt="Bannière de l’application Trilink">
-
-            </a>
-
-
-
-          </div>
-
-          <!-- Capsule Lettres -->
-          <div class="carousel-item">
-
-            <a href="https://apple.co/4hUsLMI" target="_blank" rel="noopener noreferrer"
-              aria-label="Télécharger Capsule Temporelle : Lettres sur l’App Store">
-
-              <img src="Publicité bannière paysage - 1200x720.png" class="d-block w-100"
-                alt="Bannière de l’application Capsule Temporelle : Lettres">
-
-            </a>
-
-
-
-          </div>
-
-        </div>
-
-        <!-- Flèche précédente -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselApps" data-bs-slide="prev">
-
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-
-          <span class="visually-hidden">Précédent</span>
-
-        </button>
-
-        <!-- Flèche suivante -->
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselApps" data-bs-slide="next">
-
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-
-          <span class="visually-hidden">Suivant</span>
-
-        </button>
-
-      </div>
+      <div id="apps-carousel"></div>
 
     </div>
 
@@ -1458,6 +1374,8 @@
   <!--pour le card on voit rien ""-->
   <script type="module" src="chroma-grid.js"></script>
 
+
+  <script type="module" src="circular-carousel.js"></script>
 
 </body>
 
