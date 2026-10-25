@@ -24,7 +24,7 @@ const INTRO_LENGTH = { assemble: 1500, rise: 1400, spin: 1800, none: 0 };
 const TILES = 8;
 const OVERLAP = 2.5;
 const DRAG_THRESHOLD = 5;
-const SPRING = 118;
+const SPRING = 48;
 const SETTLE_SPEED = 9;
 const CAPTION_SPACE = 76;
 const SWAP_LENGTH = 700;
@@ -941,7 +941,7 @@ if (mount) {
       aspectRatio: 1200 / 720,  // format de tes bannières
       gap: 25,
       autoplay: 'step',         // 'step' = une app à la fois ; 'drift' = rotation continue ; 'off'
-      interval: 3.5,            // secondes entre deux apps (mode 'step')
+      interval: 6.5,            // secondes entre deux apps (mode 'step')
       direction: 'left',
       pauseOnHover: true,
       parallax: 0.3,
