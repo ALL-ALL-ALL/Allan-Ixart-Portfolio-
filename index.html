@@ -20,6 +20,25 @@
   <link rel="manifest" href="site.webmanifest">
   <meta name="theme-color" content="#ffffff">
 
+
+
+  <link rel="stylesheet" href="RotatingText.css">
+
+  <script type="importmap">
+  {
+    "imports": {
+      "react": "https://esm.sh/react@19",
+      "react/jsx-runtime": "https://esm.sh/react@19/jsx-runtime",
+      "react-dom": "https://esm.sh/react-dom@19",
+      "react-dom/client": "https://esm.sh/react-dom@19/client",
+      "motion/react": "https://esm.sh/motion@12/react?external=react,react-dom"
+    }
+  }
+  </script>
+
+
+
+
   <!-- meta-description -->
   <meta name="description"
     content="Allan Ixart, développeur iOS junior à Toulouse. Applications publiées sur l'App Store avec SwiftUI. En recherche d'alternance en développement iOS.">
@@ -130,7 +149,7 @@
 
         <h1>
           <span class="highlightjesuis">JE SUIS</span><br>
-          <span class="about-name">ALLAN IXART<span class="about-cursor">_</span></span>
+          <span class="about-name"><span data-decrypt>ALLAN IXART</span><span class="about-cursor">_</span></span>
         </h1>
 
         <p class="about-role">
@@ -186,7 +205,7 @@
     <div class="about-skills">
 
       <div class="about-skills-heading">
-        <h2>CE QUE J'UTILISE</h2>
+        <h2 data-decrypt>CE QUE J'UTILISE</h2>
         <span class="about-skills-line"></span>
         <span class="about-skills-number">02</span>
       </div>
@@ -297,7 +316,7 @@
           <span></span> MON APPROCHE
         </p>
 
-        <h2>
+        <h2 data-true-focus>
           DES IDÉES.<br>
           DU CODE.<br>
           <span>DES APPS.</span>
@@ -1234,7 +1253,7 @@
 
         <h2 class="contact-heading">
           Construisons la suite <br>
-          <span class="contact-highlight">ensemble.</span>
+          <span class="contact-highlight" id="rotating-text">ensemble.</span>
         </h2>
 
 
@@ -1423,6 +1442,15 @@
   </script>
 
 
+  <!--pour le text js -->
+  <script type="module" src="rotating-text.js"></script>
+
+  <!-- pour le decryted text-->
+  <script type="module" src="decrypted-text.js"></script>
+
+
+  <!--pour des idée des app-->
+  <script src="true-focus.js"></script>
 
 </body>
 
