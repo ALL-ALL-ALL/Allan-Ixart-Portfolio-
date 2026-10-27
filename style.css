@@ -204,7 +204,7 @@ nav ul li a:hover { transform: scale(0.9); }
 
     margin: 1rem 0;
 
-    width: 350px;
+    width: 100%;
 
 }
 
@@ -1233,23 +1233,34 @@ nav ul li a:hover { transform: scale(0.9); }
     min-width: 0;
 }
 
+/* Titre "JE SUIS / ALLAN IXART"
+   ➜ La TAILLE se règle plus bas, dans "RESPONSIVE — PAGE À PROPOS" (et dans les media queries).
+   ➜ L'ESPACEMENT des lettres se règle sur chaque ligne (.highlightjesuis et .about-name),
+     jamais sur le h1, sinon il est hérité en pixels fixes et les lettres se chevauchent. */
 #about .about-intro h1 {
 
     margin: 0;
 
     color: #f5f5f7;
 
-    font-weight: 400;
-
-    letter-spacing: -0.075em;
-
-    line-height: 0.99;
+    line-height: 1.05;
 
     overflow-wrap: anywhere;
 
-    font-size: 60px ;
+    font-weight: 200;
+
+    letter-spacing: 0;
 }
 
+/* Ligne "JE SUIS" */
+#about .about-intro .highlightjesuis {
+
+    font-size: 0.4em;          /* 40 % de la taille du titre */
+    letter-spacing: 0.5em;     /* espacement de "JE SUIS" */
+
+}
+
+/* Ligne "ALLAN IXART" */
 #about .about-name {
 
     display: inline-block;
@@ -1259,7 +1270,16 @@ nav ul li a:hover { transform: scale(0.9); }
     color: #ff304f;
 
     text-shadow: 0 0 35px rgba(255, 48, 79, 0.14);
+
+    font-size: 0.9em;          /* taille du nom par rapport à "JE SUIS" */
+
+    letter-spacing: 0.4em;     /* espacement de "ALLAN IXART" */
 }
+
+
+
+
+
 
 #about .about-cursor {
 
@@ -2141,13 +2161,14 @@ nav ul li a:hover { transform: scale(0.9); }
     gap: clamp(24px, 4vw, 60px);
 }
 
+
+
+
+
+/* ➜ TAILLE du titre sur ordinateur : change le "3.5vw" (plus petit = titre plus petit) */
 #about .about-intro h1 {
 
-    font-size: clamp(2rem, 5.5vw, 5.6rem);
-
-    line-height: 1.05;
-
-    overflow-wrap: anywhere;
+    font-size: clamp(1.8rem, 3.5vw, 4rem);
 }
 
 #about .about-role {
@@ -2289,7 +2310,7 @@ nav ul li a:hover { transform: scale(0.9); }
 
     #about .about-intro h1 {
 
-        font-size: clamp(2.2rem, 5.5vw, 3.8rem);
+        font-size: clamp(1.8rem, 4.5vw, 3rem);
 
     }
 
@@ -2347,11 +2368,7 @@ nav ul li a:hover { transform: scale(0.9); }
 
     #about .about-intro h1 {
 
-        font-size: clamp(2rem, 8.5vw, 3.5rem);
-
-        letter-spacing: -0.06em;
-
-        line-height: 1.05;
+        font-size: clamp(1.8rem, 8vw, 2.8rem);
 
     }
 
@@ -2545,9 +2562,7 @@ nav ul li a:hover { transform: scale(0.9); }
 
     #about .about-intro h1 {
 
-        font-size: clamp(1.75rem, 8.3vw, 2rem);
-
-        letter-spacing: -0.055em;
+        font-size: clamp(1.6rem, 8vw, 1.9rem);
 
     }
 
@@ -2639,7 +2654,7 @@ nav ul li a:hover { transform: scale(0.9); }
 
     #about .about-intro h1 {
 
-        font-size: 1.7rem;
+        font-size: 1.6rem;
 
     }
 
@@ -2793,4 +2808,4 @@ nav ul li a:hover { transform: scale(0.9); }
     width: 100vw;
     margin-left: calc(50% - 50vw);
   }
-}
+}   
